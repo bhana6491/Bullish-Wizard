@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Bullish Wizard</title>
+
+
+  <link rel="icon" href="images/logo.png">
+
+  <!-- Google Fonts CDN -->
+  <link href="https://fonts.googleapis.com/css2?family=Galada&family=Noto+Serif+JP&display=swap" rel="stylesheet" href="styles.css">
+
+  <!-- Animation CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Bootstrap References -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+
+
+<body>
+
+  <section id="title">
+    <!-- Nav Bar -->
+        <nav class='navbar navbar-expand-lg navbar-light bg-transparent'>
+          <a class='navbar-brand animate__animated animate__fadeInLeftBig' href="index.html"><span class='logo'> <img class='hat-img' src="images/logo.png" alt="sorting hat"> Bullish Wizard</span></a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <!-- Nav Links -->
+            <ul class='navbar-nav ml-auto animate__animated animate__fadeInRightBig'>
+              <li class='nav-item'>
+                <a class="nav-link" href="stocks.html">Stocks</a>
+              </li>
+
+              <li class='nav-item'>
+                <a class="nav-link" href="bonds.html">Bonds</a>
+              </li>
+
+              <li class='nav-item'>
+                <a class="nav-link" href="options.html">Options</a>
+              </li>
+            </ul>
+
+          </div>
+
+        </nav>
+
+<!-- Front Page Carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+    <!-- Bottom Three Rectangles -->
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Inner Carousel(Animation class added)-->
+    <div class="carousel-inner animate__animated animate__fadeInUpBig">
+
+      <!-- Stocks -->
+      <div class="carousel-item active">
+
+        <a href="stocks.html">
+          <img class="d-block carousel-img" src="images/bull2.png" alt="">
+        </a>
+
+        <div class="container headings">
+          <h5>Stocks</h5>
+          <p>Get rich fast or lose it all? Explore the countless benefits that this security provides</p>
+        </div>
+
+      </div>
+
+      <!-- Bonds -->
+      <div class="carousel-item">
+
+        <a href="bonds.html">
+          <img class="d-block carousel-img" src="images/money.png" alt="...">
+        </a>
+
+        <div class="container headings">
+          <h5>Bonds</h5>
+          <p>Discover the true capabilty of a security that is an essential part of a diversified portfolio</p>
+        </div>
+
+      </div>
+
+      <!-- Options -->
+      <div class="carousel-item">
+
+        <a href="options.html">
+          <img class="d-block carousel-img" src="images/options.png" alt="...">
+        </a>
+
+        <div class="container headings">
+          <h5>Options</h5>
+          <p>One of the most powerful financial instruments utilized by the world's most successfull investors</p>
+        </div>
+
+      </div>
+
+      <!-- Carousel Controls -->
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+
+  </div>
+
+
+  </section>
+
+<!-- Jquery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Javascript stylesheet -->
+  <script src="index.js" charset="utf-8"></script>
+
+  </body>
+
+  </html>
