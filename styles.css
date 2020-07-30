@@ -1,9 +1,16 @@
 /* STYLES FOR HOME-PAGE */
 
 /* Core HTML Elements */
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: #77d8d8;
 
+}
+h3{
+  font-weight: bold;
 }
 h4{
   font-size: 2.5rem;
@@ -422,9 +429,7 @@ top:10%;
   font-family: 'Noto Serif JP',serif;
   text-align: center;
 }
-html{
-  scroll-behavior: smooth;
-}
+
 
 /* Arrow Animation */
 .arrow
@@ -500,5 +505,59 @@ html{
 .building-img{
   height: auto;
   border:4px solid #0fabbc;
+
+}
+
+
+
+/* Quotes Section */
+
+#stock-quotes{
+  font-family: 'Noto Serif JP',serif;
+  padding-top: 2.5%;
+}
+span{
+  font-weight: bold;
+}
+
+hr{
+  border: 2px solid #090979;
+
+}
+
+.line{
+  position:relative;
+  bottom:1rem;
+}
+
+.SQ-Title{
+  padding-bottom: 2%;
+  text-align: center;
+  font-size: 2rem;
+
+}
+.SQ-headings{
+  text-align: center;
+  font-weight: bold;
+}
+
+.inner{
+  position:relative;
+  text-align: center;
+}
+.table{
+  margin-bottom: 0;
+}
+.chart-h{
+  color:blue;
+}
+.chart-h:hover{
+  text-decoration: underline;
+  cursor:pointer;
+}
+.SQ-explanations{
+  position:absolute;
+
+
 
 }

@@ -10,6 +10,7 @@
     <!-- Awesome Fonts -->
     <script src="https://kit.fontawesome.com/9c98dc540b.js" crossorigin="anonymous"></script>
 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
 
 
     <!-- Google Fonts CDN -->
@@ -73,9 +74,9 @@
 <div class="topics">
 
   <p class = ><i class="fas fa-money-bill"></i> <a href="#stock-intro">The Stock Market</a> <i class="fas fa-money-bill"></i></p>
-  <p class = ><i class="fas fa-money-bill"></i> Reading Stock Quotations <i class="fas fa-money-bill"></i></p>
-  <p class = ><i class="fas fa-money-bill"></i> Common and Preferred Shares <i class="fas fa-money-bill"></i></p>
-  <p class = ><i class="fas fa-money-bill"></i> Long VS Short <i class="fas fa-money-bill"></i></p>
+  <p class = ><i class="fas fa-money-bill"></i> <a href="#stock-quotes">Stock Quotations</a> <i class="fas fa-money-bill"></i></p>
+  <p class = ><i class="fas fa-money-bill"></i> <a href="#stock-quotes">Common and Preferred Shares</a> <i class="fas fa-money-bill"></i></p>
+  <p class = ><i class="fas fa-money-bill"></i> <a href="#stock-quotes">Long VS Short</a> <i class="fas fa-money-bill"></i></p>
 </div>
 
 </div>
@@ -167,11 +168,98 @@
 
 </section>
 
-<section id = 'stock-quotes'>
-  <div class="container-fluid">
+<section id='stock-quotes'>
+  <div class="container-fluid ">
+
+    <h3 class='SQ-Title'>Interpreting Stock Quotations</h3>
+    <div class="SQ-headings">
+      <h6><b>Microsoft</b></h6>
+      <h6>52 Weeks(Friday, July 31st, 2020)</h6>
+    </div>
 
 
+    <div class="table-responsive">
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th a class="High-a chart-h" scope="col">High</th>
+            <th class = 'Low-a chart-h'scope="col">Low</th>
+            <th class = 'Ticker chart-h'scope="col">Stock</th>
+            <th class = 'Div chart-h'scope="col">Div</th>
+            <th class = 'High-d chart-h'scope="col">High</th>
+            <th class = 'Low-d chart-h'scope="col">Low</th>
+            <th class = 'closes chart-h'scope="col">Close</th>
+            <th class = 'Change chart-h'scope="col">Change</th>
+            <th class = 'Volume chart-h'scope="col">Volume</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>216.38</td>
+            <td>130.78</td>
+            <td>MSFT</td>
+            <td>1.01%</td>
+            <td>203.32</td>
+            <td>200.86</td>
+            <td>201.30</td>
+            <td>+0.5</td>
+            <td>15M</td>
+
+          </tr>
+
+        </tbody>
+
+      </table>
+    </div>
   </div>
+
+<!-- Place the divs here -->
+  <div class="container-fluid line">
+    <hr>
+  </div>
+
+
+  <div class="SQ-explanations container-fluid ">
+    <div class='high-a inner'>
+      <h6><span>High</span>: The highest price the stock has reached in a single calendar year </h6>
+      <p><span>Example</span>: The highest price that Microsoft shares traded at in the past year is $216.38</p>
+    </div>
+    <div class='low-a inner'>
+      <h6><span>Low</span>: The lowest price the stock has reached in a single calendar year</h6>
+      <p><span>Example</span>: The lowest price that Microsoft shares traded at in the past year is $130.78</p>
+    </div>
+    <div class='ticker inner'>
+      <h6><span>Stock</span>: A unique abbreviation used to identify a company on a particular stock market AKA a ticker symbol </h6>
+      <p><span>Example</span>: Microsft---->MSFT</p>
+    </div>
+    <div class='div inner'>
+      <h6><span>Div</span>: Dividends a company has given it's shareholders in a single calendar year on a per-share basis (Current stock price *(div%))</h6>
+      <p><span>Example</span>: $203.32 * 0.0101= $2.05. Microsoft has given out $2.05 in dividends per share in the past year. That amount is split over the number of times Microsoft declared dividends.
+        </p>
+    </div>
+    <div class='high-d inner'>
+      <h6><span>High</span>: The highest price reached in a trading day</h6>
+      <p><span>Example</span>: Microsft reached a high of $203.32 per share on July 31st </p>
+    </div>
+    <div class='low-d inner'>
+      <h6><span>Low</span>: The lowest price touched in a trading day</h6>
+      <p><span>Example</span>: Microsoft dipped to a low of $200.86 per share on July 31st</p>
+    </div>
+    <div class='Close inner'>
+      <h6><span>Close</span>: The last price the stock traded in the day of question</h6>
+      <p><span>Example</span>: When the NASDAQ closed at 4pm EST on July 31st, Microsoft finished the day trading at $201.30</p>
+    </div>
+    <div class='change inner'>
+      <h6><span>Change</span>: The dollar change from the previous day's closing price to present day's closing price</h6>
+      <p>Example: Microsoft is up $0.5 which means, on July 30th, Microsoft finished trading at $200.80($201.30)</p>
+    </div>
+    <div class='volume inner'>
+      <h6><span>Volume</span>:The number of shares that changed hands in that particular day</h6>
+      <p><span>Example</span>: 15 million shares were exhanged on July 31st</p>
+    </div>
+  </div>
+</div>
 
 </section>
 
