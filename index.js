@@ -7,18 +7,13 @@ $('.Close').hide();
 $('.change').hide();
 $('.volume').hide();
 $('.ticker').hide();
-$('#stockquotes').css('padding-bottom','2%');
+$('#stockquotes').css('padding-bottom','5%');
 
 
 
 $('.High-a').click(function(){
   $('.high-a').fadeIn();
-  window.scrollBy({
-    top: 100, // could be negative value
-    left: 0,
-    behavior: 'smooth'
-  });
-  $('#stockquotes').css('padding-bottom','5%');
+
   $('.div').hide();
   $('.high-d').hide();
   $('.low-d').hide();
@@ -30,13 +25,7 @@ $('.High-a').click(function(){
 
 })
 $('.Low-a').click(function(){
-  $('#stockquotes').css('padding-bottom','5%');
   $('.low-a').fadeIn();
-  window.scrollBy({
-    top: 100, // could be negative value
-    left: 0,
-    behavior: 'smooth'
-  });
   $('.div').hide();
   $('.high-a').hide();
   $('.high-d').hide();
@@ -47,13 +36,8 @@ $('.Low-a').click(function(){
   $('.ticker').hide();
 })
 $('.Ticker').click(function(){
-  $('#stockquotes').css('padding-bottom','5%');
   $('.ticker').fadeIn();
-  window.scrollBy({
-    top: 100, // could be negative value
-    left: 0,
-    behavior: 'smooth'
-  });
+
   $('.div').hide();
   $('.high-a').hide();
   $('.high-d').hide();
@@ -64,13 +48,8 @@ $('.Ticker').click(function(){
   $('.volume').hide();
 })
 $('.Div').click(function(){
-  $('#stockquotes').css('padding-bottom','5%');
   $('.div').fadeIn();
-  window.scrollBy({
-    top: 100, // could be negative value
-    left: 0,
-    behavior: 'smooth'
-  });
+
   $('.high-a').hide();
   $('.high-d').hide();
   $('.low-d').hide();
@@ -81,13 +60,8 @@ $('.Div').click(function(){
   $('.ticker').hide();
 })
 $('.High-d').click(function(){
-  $('#stockquotes').css('padding-bottom','5%');
   $('.high-d').fadeIn();
-  window.scrollBy({
-    top: 100, // could be negative value
-    left: 0,
-    behavior: 'smooth'
-  });
+
   $('.div').hide();
   $('.high-a').hide();
   $('.low-d').hide();
@@ -98,13 +72,8 @@ $('.High-d').click(function(){
   $('.ticker').hide();
 })
 $('.Low-d').click(function(){
-  $('#stockquotes').css('padding-bottom','5%');
   $('.low-d').fadeIn();
-  window.scrollBy({
-    top: 100, // could be negative value
-    left: 0,
-    behavior: 'smooth'
-  });
+
   $('.div').hide();
   $('.high-a').hide();
   $('.high-d').hide();
@@ -115,13 +84,8 @@ $('.Low-d').click(function(){
   $('.ticker').hide();
 })
 $('.closes').click(function(){
-  $('#stockquotes').css('padding-bottom','5%');
   $('.Close').fadeIn();
-  window.scrollBy({
-    top: 100, // could be negative value
-    left: 0,
-    behavior: 'smooth'
-  });
+
   $('.div').hide();
   $('.high-a').hide();
   $('.high-d').hide();
@@ -132,13 +96,8 @@ $('.closes').click(function(){
   $('.ticker').hide();
 })
 $('.Change').click(function(){
-  $('#stockquotes').css('padding-bottom','5%');
   $('.change').fadeIn();
-  window.scrollBy({
-    top: 100, // could be negative value
-    left: 0,
-    behavior: 'smooth'
-  });
+
   $('.div').hide();
   $('.high-a').hide();
   $('.high-d').hide();
@@ -149,13 +108,8 @@ $('.Change').click(function(){
   $('.ticker').hide();
 })
 $('.Volume').click(function(){
-  $('#stockquotes').css('padding-bottom','5%');
   $('.volume').fadeIn();
-  window.scrollBy({
-    top: 100, // could be negative value
-    left: 0,
-    behavior: 'smooth'
-  });
+  
   $('.div').hide();
   $('.high-a').hide();
   $('.high-d').hide();

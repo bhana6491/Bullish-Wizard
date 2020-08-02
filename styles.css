@@ -11,6 +11,7 @@ body{
 }
 h3{
   font-weight: bold;
+
 }
 h4{
   font-size: 2.5rem;
@@ -515,13 +516,16 @@ top:10%;
 #stock-quotes{
   font-family: 'Noto Serif JP',serif;
   padding-top: 2.5%;
+  padding-bottom:5%;
 }
 span{
   font-weight: bold;
 }
 
 hr{
-  border: 2px solid #090979;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #090979;
 
 }
 
@@ -530,10 +534,13 @@ hr{
   bottom:1rem;
 }
 
+.ui{
+  text-align: center;
+}
 .SQ-Title{
   padding-bottom: 2%;
-  text-align: center;
   font-size: 2rem;
+  display: inline-block;
 
 }
 .SQ-headings{
@@ -557,6 +564,35 @@ hr{
 }
 .SQ-explanations{
   position:absolute;
+}
+
+
+#stock-lvs{
+  padding-top: 2.5%;
+  font-family: 'Noto Serif JP',serif;
+  background-color: #2bb2bb;
+}
+.underline{
+  display: inline-block;
+  margin-top: 0;
+}
+
+.long{
+  margin-left: 0.5%;
+}
+
+#voting-rights{
+  font-family: 'Noto Serif JP',serif;
+  margin-top: 2%;
+  margin-left: 1.5%;
+  margin-bottom: 2%;
+}
+
+#how-to{
+  font-family: 'Noto Serif JP',serif;
+padding-top:2%;
+  padding-left: 1.5%;
+  background-color: #2bb2bb;
 
 
 
