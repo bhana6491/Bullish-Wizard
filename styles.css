@@ -4,14 +4,13 @@
 html{
   scroll-behavior: smooth;
 }
-
 body{
   background-color: #77d8d8;
-
+  height:100%;
+  width:100%;
 }
 h3{
   font-weight: bold;
-
 }
 h4{
   font-size: 2.5rem;
@@ -19,6 +18,28 @@ h4{
 h5{
   font-size: 3rem;
 }
+span{
+  font-weight: bold;
+}
+p{
+  text-decoration: none;
+}
+a{
+  text-decoration:none !important;
+
+}
+hr{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #090979;
+
+}
+.underline{
+  display: inline-block;
+  margin-top: 0;
+}
+
+
 
 /* MEDIA QUERIES */
 /* Large monitor */
@@ -28,36 +49,6 @@ h5{
     max-width: 40%;
   }
 
-  /* STOCK PAGE */
-.arrow{
-  bottom:-5rem;
-}
-  /* Header */
-  .header-img {
-    margin-top: 8%;
-    width:90%;
-  }
-  .intro, .topics {
-    line-height: 1.5;
-    font-size: 1.5rem;
-    padding-top: 5%;
-  }
-
-  /* Overview Section*/
-  .stock-objective {
-    margin-left: 10%;
-  }
-  .coin-img {
-    position: relative;
-    bottom: -2%;
-    left: 15%;
-    width: 95%;
-  }
-  .building-img {
-    position:relative;
-    width:110%;
-    bottom:8%
-}
   }
 
 @media (min-width: 1440px) and (max-width:1919px) {
@@ -67,36 +58,6 @@ h5{
   max-width: 40%;
 }
 
-/* STOCK PAGE */
-.arrow{
-  bottom:-4rem;
-}
-/* Header */
-.header-img {
-  margin-top: 8%;
-  width:85%;
-}
-.intro, .topics {
-  line-height: 1.5;
-  font-size: 1.5rem;
-  padding-top: 1%;
-}
-
-/* Overview Section*/
-.stock-objective {
-  margin-left: 10%;
-}
-.coin-img {
-  position: relative;
-  top:20%;
-  left: 5%;
-  width: 115%;
-}
-.building-img {
-  position:relative;
-  width: 110%;
-top:10%;
-}
 }
 /*
   ##Device = Laptops, Desktops
@@ -110,40 +71,11 @@ top:10%;
     left: 30%;
     max-width: 40%;
   }
-
-  /* STOCK PAGE */
-  .arrow{
-    top:3rem;
-  }
-  /* Header */
-  .header-img {
-    width:90%;
-    margin-top: 5%;
-  }
-  .intro, .topics {
-    font-size: 1.2rem;
-    padding-top: 0.5%;
+.arrow{
+  visibility: hidden;
+}
   }
 
-  /* Overview */
-  .stock-objective {
-    margin-left: 8%;
-  }
-  .coin-img {
-    position: relative;
-    left: 8%;
-    top: 30%;
-    width: 100%;
-  }
-
-  .building-img {
-    width: 110%;
-    position: relative;
-    right: 5%;
-    top: 30%;
-  }
-
-  }
 /*
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
@@ -155,38 +87,11 @@ top:10%;
   left: 16%;
   max-width: 70%;
 }
-
-/* STOCK PAGE */
 .arrow{
-  top:3rem;
+  visibility: hidden;
 }
-/* Header */
-.header-img {
-  width: 90%;
-  margin-top: 12%;
-}
-.intro, .topics {
-  font-size: 1rem;
 }
 
-/* Overview */
-.stock-objective {
-  right: 10%;
-}
-.coin-img {
-  display: none;
-}
-.stock-life {
-  position: relative;
-  right: 2%;
-}
-.building-img {
-  width: 120%;
-  position: relative;
-  right: -5%;
-  top: -6%;
-}
-}
 /*
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
@@ -198,37 +103,9 @@ top:10%;
    left: 26%;
    max-width: 50%;
  }
-
- /* STOCK PAGE */
-
- /* Header */
- .header-img {
-   width:90%;
-   margin-top: 12%;
+ .arrow{
+   visibility: hidden;
  }
- .intro, .topics {
-   font-size: 1rem;
-   padding-top: 1%;
- }
-
- /* Overview */
- .stock-objective {
-   right: 10%;
- }
- .coin-img {
-   display: none;
- }
- .stock-life {
-   position: relative;
-   right: 2%;
- }
- .building-img {
-   width: 130%;
-   position: relative;
-   right: -5%;
-   top: -6%;
- }
-
 }
 
 /*
@@ -242,37 +119,9 @@ top:10%;
     left: 25%;
     max-width: 50%;
   }
-
-  /* STOCK PAGE */
-
-  /* Header */
-  .header-img {
-    width:80%;
-    top: 5%;
+  .arrow{
+    visibility: hidden;
   }
-  .intro, .topics {
-    font-size: 1rem;
-    padding-top: 2%;
-  }
-
-  /* Overview */
-  .stock-objective {
-    right: 10%;
-  }
-  .coin-image {
-    display: none;
-  }
-  .stock-life {
-    position: relative;
-    right: 2%;
-  }
-  .building-img {
-    width: 130%;
-    position: relative;
-    left: 30%;
-    top: -6%;
-  }
-
   }
 
 /*
@@ -286,43 +135,15 @@ top:10%;
     left: 30%;
     max-width: 100%;
   }
-
-  /* STOCK PAGE */
-.arrow{
-  top:5rem;
-}
-  /* Header */
-  .header-img {
-    width:80%;
-    top: 5%;
+  .arrow{
+    visibility: hidden;
   }
-
-  /* Overview */
-  .stock-objective {
-    right: 10%;
-  }
-  .coin-image {
-    display: none;
-  }
-  .stock-life {
-    position: relative;
-    right: 2%;
-  }
-  .building-img {
-    width: 110%;
-    position: relative;
-    right: -5%;
-    top: -6%;
-  }
-
   }
 
 /* CAROUSEL ITEMS*/
-
 .carousel-img{
   border:6px solid #1f4068;
   position:relative;
-  cursor:pointer;
   max-height: auto;
   margin-top: 3%;
 }
@@ -336,42 +157,50 @@ top:10%;
   bottom: 15%;
 }
 
-.headings{
-  font-family: 'Noto Serif JP',serif;
-  font-size: 2rem;
+.carousel-headings{
+font-family: 'Titillium Web', sans-serif;
+font-size: 1.7rem;
+padding-top: 0.5%;
   text-align: center;
   position:relative;
-}
-
-/*NAV BAR ITEMS */
-.nav-item{
-  font-family: 'Noto Serif JP',serif;
-  padding-left:50px;
-  font-size: 2rem;
-  font-weight: 300;
-  text-align: left;
-  padding-bottom: 2%;
-}
-
-.hat-img{
-  width:28%;
 }
 
 .carousel-img:hover{
   opacity:0.7;
 }
 
+/*NAV BAR ITEMS */
+.nav-item{
+  font-family: 'Comfortaa', cursive;
+  padding-left:50px;
+  font-size: 2.1rem;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 2%;
+
+}
+
+.navbar-brand{
+  width:20rem;
+
+}
+
+.navbar{
+position:relative;
+width:100%;
+}
+
+.hat-img{
+  width:20%;
+}
+
 .logo{
-  font-family: 'Galada', cursive;
+  font-family: 'Cinzel Decorative', cursive;
   font-size: 3rem;
   color:#1b6ca8;
 }
 
-.navbar-brand{
-  width:300px;
-}
-
-/* NAVLINK TRANSITIONS */
+    /* NAVLINK TRANSITIONS */
 .nav-link::after{
   content:"";
   display: block;
@@ -382,20 +211,8 @@ top:10%;
 }
 
 .nav-link:hover::after{
-  width:100%;
+  width:90%;
   transition: width .3s;
-}
-.stock-life{
-  margin-top: 2%;
-  margin-left: 2%;
-}
-
-.stock-objective{
-  margin-top: 1%;
-  margin-left: 10%;
-}
-.arrow{
-  margin-bottom: 10%;
 }
 
 /* STYLES FOR STOCK PAGE */
@@ -404,48 +221,74 @@ top:10%;
   margin-left: 0;
 }
 
-.stockIntro{
-  padding-bottom: 0.5%;
-}
-
-
-/*Title section*/
-.img-header{
-  position:relative;
-  margin-top:5%;
- margin-left: 4%;
-}
-.header-img{
-  position:relative;
-  border:4px solid #0fabbc;
-}
-
-.topics{
+.stock-body-topics{
   padding-top: 2%;
   text-align: center;
 }
-.intro{
+.stock-links{
   position:relative;
-  padding-right: 10%;
-  font-family: 'Noto Serif JP',serif;
+  color:inherit;
+
+}
+.stock-links:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.stock-links:hover:after {
+
+  width: 100%;
+  left: 0;
+}
+.fa-money-bill{
+  color:green;
+}
+.stock-body-intro{
+  position:absolute;
+  background:rgba(255,255,255,0.3);
+  margin-top: 3%;
+  object-fit: cover;
+  font-size: 1.5vw;
+  color:#004e92;
+  font-weight: bold;
+  width:40%;
+  padding-bottom: 0;
+  margin-bottom: 2%;
+ top:10rem;
+  left:32%;
+  font-family: 'Titillium Web', sans-serif;
   text-align: center;
 }
 
+.stock-navbar{
+  height:10%;
+  position:absolute;
+  width:100%;
+  right:0.08%;
+  height: auto;
+}
 
 /* Arrow Animation */
+.arrow-positioning{
+  position:absolute;
+width:15%;
+  margin: 18%;
+  left:26%;
+  top:83%;
+}
 .arrow
 {
-  position: relative;
-  scroll-behavior: smooth;
-  left: 50%;
-  margin-left:-20px;
-  width: 40px;
-  height: 40px;
-  color:white;
+width: 3vw;
+height: 3vw;
+scroll-behavior: smooth;
 
-  /**
-   * Dark Arrow Down
-   */
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI1MTIiIGlkPSJzdmcyIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzIGlkPSJkZWZzNCIvPjxnIGlkPSJsYXllcjEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTU0MC4zNjIyKSI+PHBhdGggZD0ibSAxMjcuNDA2MjUsNjU3Ljc4MTI1IGMgLTQuOTg1MywwLjA3ODQgLTkuOTEwNzcsMi4xNjMwOCAtMTMuNDM3NSw1LjY4NzUgbCAtNTUsNTUgYyAtMy42MDA1NjUsMy41OTkyNyAtNS42OTY4ODMsOC42NTg5NSAtNS42OTY4ODMsMTMuNzUgMCw1LjA5MTA1IDIuMDk2MzE4LDEwLjE1MDczIDUuNjk2ODgzLDEzLjc1IEwgMjQyLjI1LDkyOS4yNSBjIDMuNTk5MjcsMy42MDA1NiA4LjY1ODk1LDUuNjk2ODggMTMuNzUsNS42OTY4OCA1LjA5MTA1LDAgMTAuMTUwNzMsLTIuMDk2MzIgMTMuNzUsLTUuNjk2ODggTCA0NTMuMDMxMjUsNzQ1Ljk2ODc1IGMgMy42MDA1NiwtMy41OTkyNyA1LjY5Njg4LC04LjY1ODk1IDUuNjk2ODgsLTEzLjc1IDAsLTUuMDkxMDUgLTIuMDk2MzIsLTEwLjE1MDczIC01LjY5Njg4LC0xMy43NSBsIC01NSwtNTUgYyAtMy41OTgxNSwtMy41OTEyNyAtOC42NTA2OCwtNS42ODEyNyAtMTMuNzM0MzgsLTUuNjgxMjcgLTUuMDgzNjksMCAtMTAuMTM2MjIsMi4wOSAtMTMuNzM0MzcsNS42ODEyNyBMIDI1Niw3NzguMDMxMjUgMTQxLjQzNzUsNjYzLjQ2ODc1IGMgLTMuNjY2NzgsLTMuNjY0MjMgLTguODQ4MDEsLTUuNzY0NDIgLTE0LjAzMTI1LC01LjY4NzUgeiIgaWQ9InBhdGgzNzY2LTEiIHN0eWxlPSJmb250LXNpemU6bWVkaXVtO2ZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc3RyZXRjaDpub3JtYWw7dGV4dC1pbmRlbnQ6MDt0ZXh0LWFsaWduOnN0YXJ0O3RleHQtZGVjb3JhdGlvbjpub25lO2xpbmUtaGVpZ2h0Om5vcm1hbDtsZXR0ZXItc3BhY2luZzpub3JtYWw7d29yZC1zcGFjaW5nOm5vcm1hbDt0ZXh0LXRyYW5zZm9ybTpub25lO2RpcmVjdGlvbjpsdHI7YmxvY2stcHJvZ3Jlc3Npb246dGI7d3JpdGluZy1tb2RlOmxyLXRiO3RleHQtYW5jaG9yOnN0YXJ0O2Jhc2VsaW5lLXNoaWZ0OmJhc2VsaW5lO2NvbG9yOiMwMDAwMDA7ZmlsbDojMjIyMjIyO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDozOC44ODAwMDEwNzttYXJrZXI6bm9uZTt2aXNpYmlsaXR5OnZpc2libGU7ZGlzcGxheTppbmxpbmU7b3ZlcmZsb3c6dmlzaWJsZTtlbmFibGUtYmFja2dyb3VuZDphY2N1bXVsYXRlO2ZvbnQtZmFtaWx5OlNhbnM7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpTYW5zIi8+PC9nPjwvc3ZnPg==);
   background-size: contain;
 }
@@ -469,76 +312,35 @@ top:10%;
 }
 
 
-/* Overview Section */
+/* Stock Market + Dividends Section */
 
 #stock-intro{
-  font-family: 'Noto Serif JP',serif;
-  background-color:#2bb2bb;
-  margin-top: 3%;
+
+font-family: 'Titillium Web', sans-serif;
+  background-color: #2bb2bb;
+  padding-top: 1.5%;
+  padding-left: 1%;
+  padding-bottom: 1.5%;
+
 
 }
-/* Paragraphs */
-.stock-life{
-  margin-top: 2%;
-  margin-left: 2%;
-}
-
-.stock-objective{
-  margin-top: 1%;
-  margin-left: 10%;
-}
-
-/* Images(stock-overview) */
-.coin-image{
-  margin-top: 2.5%;
-  margin-left: 5%;
-}
-.coin-img{
-  height:auto;
-  border:4px solid #76ead7;
-}
-.building-image{
-  position:relative;
-  margin-top: 5.5%;
-  margin-left: 5%;
-}
-
-.building-img{
-  height: auto;
-  border:4px solid #0fabbc;
-
-}
-
-
-
 /* Quotes Section */
 
 #stock-quotes{
-  font-family: 'Noto Serif JP',serif;
-  padding-top: 2.5%;
+font-family: 'Titillium Web', sans-serif;
+padding-top: 1.5%;
   padding-bottom:5%;
 }
-span{
-  font-weight: bold;
-}
 
-hr{
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border: 1px solid #090979;
-
-}
-
-.line{
+.horizontal-line{
   position:relative;
   bottom:1rem;
 }
 
-.ui{
+.quotes{
   text-align: center;
 }
 .SQ-Title{
-  padding-bottom: 2%;
   font-size: 2rem;
   display: inline-block;
 
@@ -566,34 +368,50 @@ hr{
   position:absolute;
 }
 
-
+/* LONG VS SHORT SECTION */
 #stock-lvs{
-  padding-top: 2.5%;
-  font-family: 'Noto Serif JP',serif;
+  padding-top: 1.5%;
+  font-family: 'Titillium Web', sans-serif;
   background-color: #2bb2bb;
-}
-.underline{
-  display: inline-block;
-  margin-top: 0;
-}
-
-.long{
-  margin-left: 0.5%;
+  padding-bottom: 1.5%;
+  padding-left: 1%;
 }
 
 #voting-rights{
-  font-family: 'Noto Serif JP',serif;
-  margin-top: 2%;
-  margin-left: 1.5%;
-  margin-bottom: 2%;
+font-family: 'Titillium Web', sans-serif;
+padding-top: 1.5%;
+  padding-left: 1%;
+  padding-bottom: 1.5%;
 }
 
 #how-to{
-  font-family: 'Noto Serif JP',serif;
-padding-top:2%;
-  padding-left: 1.5%;
+font-family: 'Titillium Web', sans-serif;
+padding-top:1.5%;
+  padding-left: 1%;
+  padding-bottom: 1.5%;
   background-color: #2bb2bb;
+}
 
 
+
+
+.stock-header-header{
+  position:relative;
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 192, 255, 0.5)),url('images/wall-street.png');
+  background-repeat: no-repeat;
+  height: 56vw;
+  background-size: cover;
+
+}
+
+/* USE IN THE STOCK DESCRIPTION SECTION
+   background-color: rgba(245, 245, 245, 0.4);
+
+}
+*/
+
+.stock-life{
+  padding-top: 1.5%;
+  margin-left: 1%;
 
 }

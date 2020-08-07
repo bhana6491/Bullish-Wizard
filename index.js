@@ -1,3 +1,10 @@
+
+$(".navbar-toggler").click(function(){
+  $(".stock-body-intro").toggle();
+});
+
+
+
 $('.div').hide();
 $('.high-a').hide();
 $('.high-d').hide();
@@ -109,7 +116,7 @@ $('.Change').click(function(){
 })
 $('.Volume').click(function(){
   $('.volume').fadeIn();
-  
+
   $('.div').hide();
   $('.high-a').hide();
   $('.high-d').hide();

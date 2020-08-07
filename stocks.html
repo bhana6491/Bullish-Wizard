@@ -12,10 +12,10 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
 
-
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet" href = 'styles.css'>
     <!-- Google Fonts CDN -->
-    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet" href="styles.css">
-
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;600&display=swap" rel="stylesheet" href = 'styles.css'>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet" href ='styles.css'>
     <!-- Animation CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" >
 
@@ -32,61 +32,81 @@
 
   </head>
 
-  <body class = 'stock-body'>
 
-    <nav class='navbar navbar-expand-lg navbar-light transparent'>
-      <a class='navbar-brand animate__animated animate__fadeInLeftBig' href="index.html"><span class='logo'> <img class='hat-img' src="images/logo.png" alt="sorting hat"> Bullish Wizard</span></a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<body class='stock-body'>
 
-        <!-- Nav Links -->
-        <ul class='navbar-nav ml-auto animate__animated animate__fadeInRightBig'>
-          <li class='nav-item active'>
-            <a class="nav-link" href="stocks.html">Stocks</a>
-          </li>
+  <section id='stock-header'>
+    <div class="container-fluid stock-header-header">
+      <div class="row ">
 
-          <li class='nav-item'>
-            <a class="nav-link" href="bonds.html">Bonds</a>
-          </li>
 
-          <li class='nav-item'>
-            <a class="nav-link" href="options.html">Options</a>
-          </li>
-        </ul>
+
+      <nav class='navbar navbar-expand-xl navbar-light stock-navbar'>
+        <a class='navbar-brand animate__animated animate__fadeInLeftBig' href="index.html"><span class='logo'> <img class='hat-img' src="images/logo.png" alt="sorting hat"> Bullish Wizard</a></span>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <!-- Nav Links -->
+          <ul class='navbar-nav ml-auto animate__animated animate__fadeIn'>
+            <li class='nav-item active'>
+              <a class="nav-link" href="stocks.html">Stocks</a>
+            </li>
+
+            <li class='nav-item'>
+              <a class="nav-link" href="bonds.html">Bonds</a>
+            </li>
+
+            <li class='nav-item'>
+              <a class="nav-link" href="options.html">Options</a>
+            </li>
+          </ul>
+
+        </div>
+
+      </nav>
+
+
+      <div class="container-fluid stock-body-intro">
+
+
+        <h3 >STOCKS</h3>
+        <p>This section will cover the basics of the stock market as well as the different aspects of stocks!</p>
+        <p>You can explore the following topics:</p>
+
+        <div class="stock-body-topics">
+
+          <p class=><i class="fas fa-money-bill"></i> <a class = 'stock-links' href="#stock-intro">The Stock Market</a> <i class="fas fa-money-bill"></i></p>
+          <p class=><i class="fas fa-money-bill"></i> <a class = 'stock-links' href="#stock-quotes">Stock Quotations</a> <i class="fas fa-money-bill"></i></p>
+          <p class=><i class="fas fa-money-bill"></i> <a class = 'stock-links' href="#stock-quotes">Long Vs Short</a> <i class="fas fa-money-bill"></i></p>
+          <p class=><i class="fas fa-money-bill"></i> <a class = 'stock-links' href="#stock-quotes">Voting Rights</a> <i class="fas fa-money-bill"></i></p>
+          <p class=><i class="fas fa-money-bill"></i> <a class = 'stock-links' href="#stock-quotes">Getting started</a> <i class="fas fa-money-bill"></i></p>
+
+          <div class="container arrow-positioning">
+            <a href="#stock-intro">
+              <div class="arrow bounce"></div>
+            </a>
+          </div>
+        </div>
+
 
       </div>
 
-    </nav>
-<section id = 'stock-header'>
-<div class="container-fluid">
-  <div class="row img-header ">
-    <div class="col-lg-6 col-sm-6">
-    <img class = 'header-img' src="images/wall-street.png" alt="Image of WallStreet">
+    </div>
   </div>
-    <div class="col-lg-6 col-sm-6 intro">
-  <h4>Stocks</h4>
-  <p>This section will cover the basics of the stock market as well as the different aspects of stocks!</p>
-  <p>You can explore the following topics:</p>
-<div class="topics">
 
-  <p class = ><i class="fas fa-money-bill"></i> <a href="#stock-intro">The Stock Market</a> <i class="fas fa-money-bill"></i></p>
-  <p class = ><i class="fas fa-money-bill"></i> <a href="#stock-quotes">Stock Quotations</a> <i class="fas fa-money-bill"></i></p>
-  <p class = ><i class="fas fa-money-bill"></i> <a href="#stock-quotes">Long Vs Short</a> <i class="fas fa-money-bill"></i></p>
-  <p class = ><i class="fas fa-money-bill"></i> <a href="#stock-quotes">Voting Rights</a> <i class="fas fa-money-bill"></i></p>
-</div>
 
-</div>
-
-</div>
-</div>
+  </section>
 
 
 
-<a href="#stock-intro"> <div class="arrow bounce ">  </div>  </a>
+
+
 
 
 
@@ -94,14 +114,15 @@
 
 <!-- STOCK OVERVIEW -->
 <section id='stock-intro'>
-
-  <div class="container-fluid stockIntro">
-
+  <div class="container-fluid ">
     <div class="row">
 
-      <div class="col-lg-6 col-md-12 col-sm-12 stock-life">
 
-        <h3 class = 'underline'>Stock Life Cycle <hr> </h3>
+
+
+      <div class="col-lg-6">
+
+        <h3 class = 'underline'>Stock Life Cycle<hr> </h3>
         <p>
           When a company reaches a certain point, the cost to maintain and expand the business <b>outgrows</b> their pockets.
           In order for the business to continue it's growth and fund any new ventures, <b>additional capital</b> is required.
@@ -128,19 +149,23 @@
 
       </div>
 
-       <div class="col-lg-4 col-md-8 col-sm-8 building-image">
-        <img class='building-img' src="images/ny.png" alt="">
-      </div>
+            <div class="col-lg-6">
+
+            </div>
+
 
     </div>
 
-    <div class="row">
 
-      <div class="col-lg-4 col-md-8 col-sm-4 coin-image">
-        <img class='coin-img' src="images/coins.png" alt="">
+    <div class="row jesus">
+
+      <div class="col-lg-6">
+
       </div>
 
-      <div class="col-lg-6 col-md-12 col-sm-12 stock-objective">
+
+
+      <div class="col-lg-6 stock-objective">
 
         <h3 class = 'underline'>What's the point? <hr> </h3>
         <p>
@@ -165,18 +190,19 @@
 
       </div>
 
+
     </div>
-
-
-
   </div>
+
+
+
 
 </section>
 
 <section id='stock-quotes'>
-  <div class="container-fluid ui ">
+  <div class="container-fluid quotes ">
 
-    <h3 class='SQ-Title'>Interpreting Stock Quotations <span><hr> </span>  </h3>
+    <h3 class='SQ-Title'>Interpreting Stock Quotations <span><hr></span>  </h3>
     <div class="SQ-headings">
       <h6><b>Microsoft</b></h6>
       <h6>52 Weeks(Friday, July 31st, 2020)</h6>
@@ -219,8 +245,7 @@
     </div>
   </div>
 
-<!-- Place the divs here -->
-  <div class="container-fluid line">
+  <div class="container-fluid horizontal-line">
     <hr>
   </div>
 
@@ -268,11 +293,7 @@
 
 </section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<script src="index.js" charset="utf-8"></script>
-  </body>
-</html>
 
 <section id='stock-lvs'>
 
@@ -295,7 +316,7 @@
 
 
     </div>
-    <div class="row long">
+    <div class="row short">
       <div class="col-lg-6 ">
         <h3 class = 'underline'>Going Short <hr> </h3>
 
@@ -387,3 +408,8 @@
 
   </div>
 </section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="index.js" charset="utf-8"></script>
+</body>
+</html>
