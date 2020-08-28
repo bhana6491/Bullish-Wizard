@@ -1,13 +1,13 @@
-/* STYLES FOR HOME-PAGE */
 
 /* Core HTML Elements */
 html{
   scroll-behavior: smooth;
+  height: 100%;
 }
 body{
-  background-color: #77d8d8;
   height:100%;
-  width:100%;
+  font-family: 'Titillium Web', sans-serif;
+
 }
 h3{
   font-weight: bold;
@@ -40,13 +40,21 @@ hr{
 }
 
 
+.landing{
+  background-color: #36096d;
+  background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+margin-bottom: 0;
+}
 
-/* MEDIA QUERIES */
+/* *******************MEDIA QUERIES************************** */
 /* Large monitor */
 @media (min-width: 1920px) {
   .carousel-img {
     left: 30%;
     max-width: 40%;
+  }
+  .stock-header-header{
+    background-attachment: fixed;
   }
 
   }
@@ -57,7 +65,9 @@ hr{
   left: 30%;
   max-width: 40%;
 }
-
+.stock-header-header{
+  background-attachment: fixed;
+}
 }
 /*
   ##Device = Laptops, Desktops
@@ -73,6 +83,9 @@ hr{
   }
 .arrow{
   visibility: hidden;
+}
+.stock-header-header{
+  background-attachment: fixed;
 }
   }
 
@@ -90,6 +103,9 @@ hr{
 .arrow{
   visibility: hidden;
 }
+.stock-header-header{
+  background-attachment: inherit;
+}
 }
 
 /*
@@ -105,6 +121,9 @@ hr{
  }
  .arrow{
    visibility: hidden;
+ }
+ .stock-header-header{
+   background-attachment: inherit;
  }
 }
 
@@ -122,6 +141,9 @@ hr{
   .arrow{
     visibility: hidden;
   }
+  .stock-header-header{
+    background-attachment: inherit;
+  }
   }
 
 /*
@@ -138,9 +160,15 @@ hr{
   .arrow{
     visibility: hidden;
   }
+  .stock-header-header{
+    background-attachment: inherit;
+  }
   }
 
-/* CAROUSEL ITEMS*/
+  /* ******************* END OF MEDIA QUERIES************************** */
+
+
+/*********************** CAROUSEL ITEMS START**********************************/
 .carousel-img{
   border:6px solid #1f4068;
   position:relative;
@@ -168,15 +196,15 @@ padding-top: 0.5%;
 .carousel-img:hover{
   opacity:0.7;
 }
+/*********************** CAROUSEL ITEMS END**********************************/
 
-/*NAV BAR ITEMS */
+/***********************NAV BAR ITEMS START *********************************/
 .nav-item{
   font-family: 'Comfortaa', cursive;
   padding-left:50px;
   font-size: 2.1rem;
   font-weight: 300;
   text-align: center;
-  padding-bottom: 2%;
 
 }
 
@@ -196,11 +224,12 @@ width:100%;
 
 .logo{
   font-family: 'Cinzel Decorative', cursive;
-  font-size: 3rem;
-  color:#1b6ca8;
+  font-size: 3.6rem;
+  color:#0f4c81;
 }
+/*********************** NAVBAR ITEMS END**********************************/
 
-    /* NAVLINK TRANSITIONS */
+/*********************** NAVLINK TRANSITIONS START**********************************/
 .nav-link::after{
   content:"";
   display: block;
@@ -214,11 +243,21 @@ width:100%;
   width:90%;
   transition: width .3s;
 }
+/*********************** NAVLINK TRANSITIONS END**********************************/
 
-/* STYLES FOR STOCK PAGE */
+/************************ STOCK PAGE START ***************************************/
 
+/*********************** STOCK HEADER START**********************************/
 #stock-body{
   margin-left: 0;
+}
+.stock-header-header{
+  position:relative;
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 192, 255, 0.5)),url('images/wall-street.png');
+  height: 56vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .stock-body-topics{
@@ -254,9 +293,8 @@ width:100%;
   position:absolute;
   background:rgba(255,255,255,0.3);
   margin-top: 3%;
-  object-fit: cover;
   font-size: 1.5vw;
-  color:#004e92;
+  color:black;
   font-weight: bold;
   width:40%;
   padding-bottom: 0;
@@ -274,8 +312,9 @@ width:100%;
   right:0.08%;
   height: auto;
 }
+/*********************** STOCK HEADER END**********************************/
 
-/* Arrow Animation */
+/*********************** ARROW ANIMATION START**********************************/
 .arrow-positioning{
   position:absolute;
 width:15%;
@@ -287,7 +326,7 @@ width:15%;
 {
 width: 3vw;
 height: 3vw;
-scroll-behavior: smooth;
+scroll-behavior: (slow smooth);
 
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI1MTIiIGlkPSJzdmcyIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzIGlkPSJkZWZzNCIvPjxnIGlkPSJsYXllcjEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTU0MC4zNjIyKSI+PHBhdGggZD0ibSAxMjcuNDA2MjUsNjU3Ljc4MTI1IGMgLTQuOTg1MywwLjA3ODQgLTkuOTEwNzcsMi4xNjMwOCAtMTMuNDM3NSw1LjY4NzUgbCAtNTUsNTUgYyAtMy42MDA1NjUsMy41OTkyNyAtNS42OTY4ODMsOC42NTg5NSAtNS42OTY4ODMsMTMuNzUgMCw1LjA5MTA1IDIuMDk2MzE4LDEwLjE1MDczIDUuNjk2ODgzLDEzLjc1IEwgMjQyLjI1LDkyOS4yNSBjIDMuNTk5MjcsMy42MDA1NiA4LjY1ODk1LDUuNjk2ODggMTMuNzUsNS42OTY4OCA1LjA5MTA1LDAgMTAuMTUwNzMsLTIuMDk2MzIgMTMuNzUsLTUuNjk2ODggTCA0NTMuMDMxMjUsNzQ1Ljk2ODc1IGMgMy42MDA1NiwtMy41OTkyNyA1LjY5Njg4LC04LjY1ODk1IDUuNjk2ODgsLTEzLjc1IDAsLTUuMDkxMDUgLTIuMDk2MzIsLTEwLjE1MDczIC01LjY5Njg4LC0xMy43NSBsIC01NSwtNTUgYyAtMy41OTgxNSwtMy41OTEyNyAtOC42NTA2OCwtNS42ODEyNyAtMTMuNzM0MzgsLTUuNjgxMjcgLTUuMDgzNjksMCAtMTAuMTM2MjIsMi4wOSAtMTMuNzM0MzcsNS42ODEyNyBMIDI1Niw3NzguMDMxMjUgMTQxLjQzNzUsNjYzLjQ2ODc1IGMgLTMuNjY2NzgsLTMuNjY0MjMgLTguODQ4MDEsLTUuNzY0NDIgLTE0LjAzMTI1LC01LjY4NzUgeiIgaWQ9InBhdGgzNzY2LTEiIHN0eWxlPSJmb250LXNpemU6bWVkaXVtO2ZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc3RyZXRjaDpub3JtYWw7dGV4dC1pbmRlbnQ6MDt0ZXh0LWFsaWduOnN0YXJ0O3RleHQtZGVjb3JhdGlvbjpub25lO2xpbmUtaGVpZ2h0Om5vcm1hbDtsZXR0ZXItc3BhY2luZzpub3JtYWw7d29yZC1zcGFjaW5nOm5vcm1hbDt0ZXh0LXRyYW5zZm9ybTpub25lO2RpcmVjdGlvbjpsdHI7YmxvY2stcHJvZ3Jlc3Npb246dGI7d3JpdGluZy1tb2RlOmxyLXRiO3RleHQtYW5jaG9yOnN0YXJ0O2Jhc2VsaW5lLXNoaWZ0OmJhc2VsaW5lO2NvbG9yOiMwMDAwMDA7ZmlsbDojMjIyMjIyO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDozOC44ODAwMDEwNzttYXJrZXI6bm9uZTt2aXNpYmlsaXR5OnZpc2libGU7ZGlzcGxheTppbmxpbmU7b3ZlcmZsb3c6dmlzaWJsZTtlbmFibGUtYmFja2dyb3VuZDphY2N1bXVsYXRlO2ZvbnQtZmFtaWx5OlNhbnM7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpTYW5zIi8+PC9nPjwvc3ZnPg==);
   background-size: contain;
@@ -310,9 +349,10 @@ scroll-behavior: smooth;
     transform: translateY(-15px);
   }
 }
+/*********************** ARROW ANIMATION END**********************************/
 
 
-/* Stock Market + Dividends Section */
+/*********************** STOCK MARKET + DIVIDEND START**********************************/
 
 #stock-intro{
 
@@ -330,6 +370,7 @@ font-family: 'Titillium Web', sans-serif;
 font-family: 'Titillium Web', sans-serif;
 padding-top: 1.5%;
   padding-bottom:5%;
+  background-color: #7fdbda;
 }
 
 .horizontal-line{
@@ -367,8 +408,9 @@ padding-top: 1.5%;
 .SQ-explanations{
   position:absolute;
 }
+/*********************** STOCK MARKET + DIVIDEND END**********************************/
 
-/* LONG VS SHORT SECTION */
+/*********************** LONG VS SHORT;VOTING RIGHTS;HOW-TO START**********************************/
 #stock-lvs{
   padding-top: 1.5%;
   font-family: 'Titillium Web', sans-serif;
@@ -382,7 +424,10 @@ font-family: 'Titillium Web', sans-serif;
 padding-top: 1.5%;
   padding-left: 1%;
   padding-bottom: 1.5%;
+  background-color: #7fdbda;
+
 }
+
 
 #how-to{
 font-family: 'Titillium Web', sans-serif;
@@ -391,27 +436,165 @@ padding-top:1.5%;
   padding-bottom: 1.5%;
   background-color: #2bb2bb;
 }
+/*********************** LONG VS SHORT;VOTING RIGHTS;HOW-TO END**********************************/
 
 
+/*********************** FOOTER START**********************************/
+
+/* Footer for stock page */
+footer{
+  position: relative;
+  font-family: 'Titillium Web', sans-serif;
+    bottom: 0;
+    width: 100%;
+    padding-top: 1%;
+    line-height: 0.3;
+    height: 5rem;
+    text-align: center;
+    background-color: #7fdbda;
 
 
-.stock-header-header{
-  position:relative;
-  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 192, 255, 0.5)),url('images/wall-street.png');
-  background-repeat: no-repeat;
-  height: 56vw;
-  background-size: cover;
 
 }
+/* Footer for home page */
+.foot{
+  position: absolute;
+  font-family: 'Titillium Web', sans-serif;
+    bottom: 0;
+    width: 100%;
+    padding-top: 1%;
+    line-height: 0.3;
+    height: 5rem;
+    text-align: center;
+    background-color: transparent;
 
-/* USE IN THE STOCK DESCRIPTION SECTION
-   background-color: rgba(245, 245, 245, 0.4);
 
+
+  }
+  /*********************** FOOTER END**********************************/
+  /* ****************************END OF STOCK SECTION************************ */
+
+
+
+
+
+  /*********************** START OF BOND SECTION **********************************/
+  /*********************** BOND INTRO PAGE**********************************/
+
+  .bond-header-header{
+    position:relative;
+    background-image: linear-gradient(to bottom, rgba(149, 244, 139, 0.5), rgba(39, 204, 20, 0.7)),url('images/investment.png');
+    height: 100%;
+
+      /* Creates the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+
+
+    height: 56vw;
+  }
+
+  .bond-body-intro{
+    position:absolute;
+    background:rgba(255,255,255,0.3);
+    margin-top: 3%;
+    font-size: 1.5vw;
+    color:black;
+    font-weight: bold;
+    width:40%;
+    left:30%;
+    top:10rem;
+    height:
+    bottom:20%;
+    padding-bottom: 0;
+    margin-bottom: 2%;
+    text-align: center;
+  }
+.bond-body-topics{
+  color: green;
 }
-*/
 
-.stock-life{
+.bond-links{
+  color:black;
+}
+
+#bond-intro{
   padding-top: 1.5%;
-  margin-left: 1%;
+  padding-bottom: 1.5%;
+  padding-left: 1%;
+  background-color: #b6eb7a;
 
 }
+.money{
+  position:relative;
+  width:200px;
+  margin-top: 60%;
+}
+#terminology{
+  background-color:#a1dd70;
+  padding-top: 1.5%;
+  padding-left: 1%;
+  margin-right: 0;
+  padding-bottom: 1.5%;
+}
+
+#bond-quotes{
+padding-top: 1.5%;
+  padding-bottom:5%;
+  background-color: #b6eb7a;
+
+}
+
+#bond-interest{
+  padding-top: 1.5%;
+  padding-left: 1%;
+  padding-bottom: 1.5%;
+  background-color:#a1dd70;
+
+}
+#bond-gov-gic{
+  padding-top: 1.5%;
+  padding-left: 1%;
+  padding-bottom: 1.5%;
+  background-color: #b6eb7a;
+
+}
+.bond-footer{
+  position: relative;
+  font-family: 'Titillium Web', sans-serif;
+    bottom: 0;
+    width: 100%;
+    padding-top: 1%;
+    line-height: 0.3;
+    height: 5rem;
+    text-align: center;
+background-color:#a1dd70;
+
+}
+
+
+
+
+
+
+
+
+
+ .fund-header-header{
+   position:relative;
+   background-image: linear-gradient(to bottom, rgba(252, 185, 201, 0.5), rgba(242, 104, 136, 0.7)),url('images/funds.jpg');
+   height: 100%;
+
+     /* Creates the parallax scrolling effect */
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+
+
+
+   height: 56vw;
+ }

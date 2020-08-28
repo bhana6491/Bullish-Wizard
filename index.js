@@ -1,4 +1,14 @@
+$(window).scroll(function(e) {
 
+    var distanceScrolled = $(this).scrollTop();
+
+    $('.stock-header-header').css('-webkit-filter', 'blur('+distanceScrolled/60+'px)');
+
+});
+
+$(".fa-github").hover(function(){
+  $(".fa-github").addClass('fa-3x')
+})
 $(".navbar-toggler").click(function(){
   $(".stock-body-intro").toggle();
 });

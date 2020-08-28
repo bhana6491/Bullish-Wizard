@@ -12,8 +12,8 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
 
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet" href = 'styles.css'>
     <!-- Google Fonts CDN -->
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet" href = 'styles.css'>
 <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;600&display=swap" rel="stylesheet" href = 'styles.css'>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet" href ='styles.css'>
     <!-- Animation CDN -->
@@ -38,7 +38,7 @@
 <body class='stock-body'>
 
   <section id='stock-header'>
-    <div class="container-fluid stock-header-header">
+    <div class="container-fluid stock-header-header animate__animated animate__fadeIn">
       <div class="row ">
 
 
@@ -46,14 +46,14 @@
       <nav class='navbar navbar-expand-xl navbar-light stock-navbar'>
         <a class='navbar-brand animate__animated animate__fadeInLeftBig' href="index.html"><span class='logo'> <img class='hat-img' src="images/logo.png" alt="sorting hat"> Bullish Wizard</a></span>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
           <!-- Nav Links -->
-          <ul class='navbar-nav ml-auto animate__animated animate__fadeIn'>
+          <ul class='navbar-nav ml-auto animate__animated animate__fadeInRightBig'>
             <li class='nav-item active'>
               <a class="nav-link" href="stocks.html">Stocks</a>
             </li>
@@ -63,7 +63,7 @@
             </li>
 
             <li class='nav-item'>
-              <a class="nav-link" href="options.html">Options</a>
+              <a class="nav-link" href="funds.html">Funds</a>
             </li>
           </ul>
 
@@ -72,35 +72,34 @@
       </nav>
 
 
-      <div class="container-fluid stock-body-intro">
-
-
-        <h3 >STOCKS</h3>
-        <p>This section will cover the basics of the stock market as well as the different aspects of stocks!</p>
-        <p>You can explore the following topics:</p>
-
-        <div class="stock-body-topics">
-
-          <p class=><i class="fas fa-money-bill"></i> <a class = 'stock-links' href="#stock-intro">The Stock Market</a> <i class="fas fa-money-bill"></i></p>
-          <p class=><i class="fas fa-money-bill"></i> <a class = 'stock-links' href="#stock-quotes">Stock Quotations</a> <i class="fas fa-money-bill"></i></p>
-          <p class=><i class="fas fa-money-bill"></i> <a class = 'stock-links' href="#stock-quotes">Long Vs Short</a> <i class="fas fa-money-bill"></i></p>
-          <p class=><i class="fas fa-money-bill"></i> <a class = 'stock-links' href="#stock-quotes">Voting Rights</a> <i class="fas fa-money-bill"></i></p>
-          <p class=><i class="fas fa-money-bill"></i> <a class = 'stock-links' href="#stock-quotes">Getting started</a> <i class="fas fa-money-bill"></i></p>
-
-          <div class="container arrow-positioning">
-            <a href="#stock-intro">
-              <div class="arrow bounce"></div>
-            </a>
-          </div>
-        </div>
-
-
-      </div>
 
     </div>
   </div>
 
+  <div class="container-fluid stock-body-intro">
 
+
+    <h3 >STOCKS</h3>
+    <p>This section will cover the basics of the stock market as well as the different aspects of stocks!</p>
+    <p>You can explore the following topics:</p>
+
+    <div class="stock-body-topics">
+
+      <p class=><i class="fas fa-money-bill"></i> <a class = 'stock-links' href="#stock-intro">The Stock Market</a> <i class="fas fa-money-bill"></i></p>
+      <p class=><i class="fas fa-money-bill"></i> <a class = 'stock-links' href="#stock-quotes">Stock Quotations</a> <i class="fas fa-money-bill"></i></p>
+      <p class=><i class="fas fa-money-bill"></i> <a class = 'stock-links' href="#stock-lvs">Long Vs Short</a> <i class="fas fa-money-bill"></i></p>
+      <p class=><i class="fas fa-money-bill"></i> <a class = 'stock-links' href="#voting-rights">Voting Rights</a> <i class="fas fa-money-bill"></i></p>
+      <p class=><i class="fas fa-money-bill"></i> <a class = 'stock-links' href="#how-to">Getting started</a> <i class="fas fa-money-bill"></i></p>
+
+      <div class="container arrow-positioning">
+        <a href="#stock-intro">
+          <div class="arrow bounce"></div>
+        </a>
+      </div>
+    </div>
+
+
+  </div>
   </section>
 
 
@@ -149,9 +148,10 @@
 
       </div>
 
-            <div class="col-lg-6">
+      <div class="col-lg-6 s">
 
-            </div>
+      </div>
+
 
 
     </div>
@@ -412,4 +412,14 @@
 
 <script src="index.js" charset="utf-8"></script>
 </body>
+<footer>
+  <p class = ''>Created By: Adhyayan Bhandari |  <span> <a href=""><i class="fab fa-github"></i></a> <a href=""><i class="fas fa-envelope"></i></a> <a href=""><i class="fab fa-linkedin"></i> </a></span></p>
+<p>Copyright <i class="far fa-copyright"></i> 2020 Bullish-Wizard. All rights reserved. </p>
+
+
+
+
+
+
+</footer>
 </html>
