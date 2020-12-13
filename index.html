@@ -1,6 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="en" dir="ltr">
 
+<!-- ATTRIBUTIONS TO INCLUDE -->
+<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+<!-- <div>Icons made by <a href="https://www.flaticon.com/free-icon/money_858114" title="Pause08">Pause08</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
 
 
 <head>
@@ -10,20 +17,22 @@
   <title>Bullish Wizard</title>
 
 
-  <link rel="icon" href="images/logo.png">
+  <link rel="icon" href="images/hat.png">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet" href = 'styles.css'>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap" rel="stylesheet" href = 'styles.css'>
   <script src="https://kit.fontawesome.com/9c98dc540b.js" crossorigin="anonymous"></script>
-
-  <!-- Google Fonts CDN -->
-  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;600&display=swap" rel="stylesheet" href = 'styles.css'>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet" href ='styles.css'>
-
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet" href = 'styles.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300;500&display=swap" rel="stylesheet" href = 'styles.css'>
+<link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet" href = 'styles.css'>
   <!-- Animation CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+<link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css"/>
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 
@@ -40,8 +49,9 @@
 
   <section id="title">
     <!-- Nav Bar -->
-        <nav class='navbar navbar-expand-xl navbar-light bg-transparent'>
-          <a class='navbar-brand animate__animated animate__fadeInLeftBig' href="index.html"><span class='logo'> <img class='hat-img' src="images/logo.png" alt="sorting hat"> Bullish Wizard</span></a>
+        <nav class='navbar navbar-expand-xl navbar-light bg-transparent'  style="background-colour: red;">
+
+          <a class='navbar-brand animate__animated animate__fadeInLeftBig' href="index.html"> <img class = 'logo2' src="images/hat.png" alt=""><span class = 'logo1'>Bullish Wizard</span>  <span class = 'logo1'></span>  </a>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -50,7 +60,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
             <!-- Nav Links -->
-            <ul class='navbar-nav ml-auto animate__animated animate__fadeInRightBig'>
+            <ul class='navbar-nav ml-auto animate__animated '>
               <li class='nav-item'>
                 <a class="nav-link" href="stocks.html">Stocks</a>
               </li>
@@ -62,11 +72,12 @@
               <li class='nav-item'>
                 <a class="nav-link" href="funds.html">Funds</a>
               </li>
-            </ul>
 
+            </ul>
           </div>
 
         </nav>
+
 
 <!-- Front Page Carousel -->
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -90,7 +101,7 @@
 
         <div class="container carousel-headings">
           <h5>Stocks</h5>
-          <p>Get rich fast or lose it all? Explore the countless benefits that this security provides</p>
+          <p class = 'blurb'>Get rich fast or lose it all? Explore the countless benefits that this security provides</p>
         </div>
 
       </div>
@@ -99,12 +110,12 @@
       <div class="carousel-item">
 
         <a href="bonds.html">
-          <img class="d-block carousel-img" src="images/money.png" alt="...">
+          <img class="d-block carousel-img" src="images/money.png" alt="">
         </a>
 
         <div class="container carousel-headings">
           <h5>Bonds</h5>
-          <p>Discover the true capabilty of a security that is an essential part of a diversified portfolio</p>
+          <p class = 'blurb'>Discover the true capabilty of a security that is an essential part of a diversified portfolio</p>
         </div>
 
       </div>
@@ -117,8 +128,8 @@
         </a>
 
         <div class="container carousel-headings">
-          <h5>Options</h5>
-          <p>One of the most powerful financial instruments utilized by the world's most successfull investors</p>
+          <h5>Funds</h5>
+          <p class = 'blurb'> One of the most powerful financial instruments utilized by the world's most successfull investors</p>
         </div>
 
       </div>
@@ -147,12 +158,14 @@
 
   <!-- Javascript stylesheet -->
     <script src="index.js" charset="utf-8"></script>
+
   </body>
   <footer class = 'foot'>
+
     <p>Copyright <i class="far fa-copyright"></i> 2020 Bullish-Wizard. All rights reserved. </p>
 
-    <p>Created By: Adhyayan Bhandari |  <span> <a href=""><i class="fab fa-github"></i></a> <a href=""><i class="fas fa-envelope"></i></a> <a href=""><i class="fab fa-linkedin"></i> </a></span></p>
   </footer>
+
 
 
 

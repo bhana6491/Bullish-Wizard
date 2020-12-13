@@ -1,23 +1,48 @@
 
 /* Core HTML Elements */
+
+
+
+
+
+
+
 html{
   scroll-behavior: smooth;
   height: 100%;
 }
+
+thead{
+  background-color: #52575d;
+}
+
 body{
   height:100%;
-  font-family: 'Titillium Web', sans-serif;
-
+  font-family: 'Noto Sans HK', sans-serif;
 }
+#title{
+  background: linear-gradient(180deg, #035aa6  0%,#3abeff  12%);
+}
+hr{
+   border-top: 0.5px solid white;
+   width: 99%;
+}
+/* Sub Headings for different pages */
 h3{
   font-weight: bold;
 }
 h4{
-  font-size: 2.5rem;
+  font-size: 1.2rem;
+  font-weight:bolder;
 }
 h5{
   font-size: 3rem;
+  font-weight: 100;
 }
+h6{
+  font-size: 1.5rem;
+}
+
 span{
   font-weight: bold;
 }
@@ -27,23 +52,36 @@ p{
 a{
   text-decoration:none !important;
 
+
 }
-hr{
+a:hover{
+  color:black;
+}
+/* hr{
   margin-top: 5px;
   margin-bottom: 5px;
   border: 1px solid #090979;
 
-}
+} */
 .underline{
   display: inline-block;
   margin-top: 0;
+  border-radius: 5px 5px 5px 5px;
+-moz-border-radius: 5px 5px 5px 5px;
+-webkit-border-radius: 5px 5px 5px 5px;
+border: 1.7px solid #ffffff;
+padding: 0.5%;
+background:rgba(255,255,255, 0.3);
 }
 
-
 .landing{
-  background-color: #36096d;
-  background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
 margin-bottom: 0;
+background-color: #3abeff;
+
+}
+.coll{
+  color: white;
+  height: 20px;
 }
 
 /* *******************MEDIA QUERIES************************** */
@@ -53,8 +91,22 @@ margin-bottom: 0;
     left: 30%;
     max-width: 40%;
   }
-  .stock-header-header{
+  .stock-header-header, .bond-header-header, .fund-header-header{
     background-attachment: fixed;
+  }
+  #stock-quotes, #bond-quotes{
+    padding-bottom:4%;
+
+  }
+
+  .bank,.fees{
+    margin-top: 32%;
+  }
+  .goal,.learn{
+    margin-top: 33%;
+  }
+  .guide{
+    font-size: 1rem;
   }
 
   }
@@ -65,9 +117,13 @@ margin-bottom: 0;
   left: 30%;
   max-width: 40%;
 }
-.stock-header-header{
+.stock-header-header, .bond-header-header, .fund-header-header{
   background-attachment: fixed;
 }
+#stock-quotes, #bond-quotes{
+  padding-bottom:5%;
+}
+
 }
 /*
   ##Device = Laptops, Desktops
@@ -84,8 +140,11 @@ margin-bottom: 0;
 .arrow{
   visibility: hidden;
 }
-.stock-header-header{
+.stock-header-header, .bond-header-header, .fund-header-header{
   background-attachment: fixed;
+}
+#stock-quotes, #bond-quotes{
+  padding-bottom: 8%;
 }
   }
 
@@ -103,8 +162,12 @@ margin-bottom: 0;
 .arrow{
   visibility: hidden;
 }
-.stock-header-header{
+.stock-header-header, .bond-header-header, .fund-header-header{
   background-attachment: inherit;
+}
+#stock-quotes, #bond-quotes{
+  padding-bottom:8%;
+
 }
 }
 
@@ -122,8 +185,12 @@ margin-bottom: 0;
  .arrow{
    visibility: hidden;
  }
- .stock-header-header{
+ .stock-header-header, .bond-header-header, .fund-header-header{
    background-attachment: inherit;
+ }
+ #stock-quotes, #bond-quotes{
+   padding-bottom:8%;
+
  }
 }
 
@@ -141,8 +208,12 @@ margin-bottom: 0;
   .arrow{
     visibility: hidden;
   }
-  .stock-header-header{
+  .stock-header-header, .bond-header-header, .fund-header-header{
     background-attachment: inherit;
+  }
+  #stock-quotes, #bond-quotes{
+    padding-bottom:7%;
+
   }
   }
 
@@ -160,8 +231,12 @@ margin-bottom: 0;
   .arrow{
     visibility: hidden;
   }
-  .stock-header-header{
+  .stock-header-header, .bond-header-header, .fund-header-header{
     background-attachment: inherit;
+  }
+  #stock-quotes, #bond-quotes{
+    padding-bottom:7%;
+
   }
   }
 
@@ -170,10 +245,17 @@ margin-bottom: 0;
 
 /*********************** CAROUSEL ITEMS START**********************************/
 .carousel-img{
-  border:6px solid #1f4068;
+  border:4px solid black;
   position:relative;
   max-height: auto;
   margin-top: 3%;
+}
+
+
+
+.carousel{
+  display:flex;
+  background: #3abeff;
 }
 
 .carousel-indicators{
@@ -184,13 +266,17 @@ margin-bottom: 0;
   position:relative;
   bottom: 15%;
 }
-
+.blurb{
+  opacity:0.8;
+}
 .carousel-headings{
-font-family: 'Titillium Web', sans-serif;
-font-size: 1.7rem;
+font-family: 'Noto Sans HK', sans-serif;
+font-size: 1.6rem;
+font-weight: 100;
 padding-top: 0.5%;
   text-align: center;
   position:relative;
+  color: white;
 }
 
 .carousel-img:hover{
@@ -200,16 +286,17 @@ padding-top: 0.5%;
 
 /***********************NAV BAR ITEMS START *********************************/
 .nav-item{
-  font-family: 'Comfortaa', cursive;
+  position:relative;
+  font-family: 'Noto Sans HK', sans-serif;
   padding-left:50px;
   font-size: 2.1rem;
   font-weight: 300;
   text-align: center;
-
 }
-
+nav .navbar-nav li a{
+  color: #e3e3e3 !important;
+  }
 .navbar-brand{
-  width:20rem;
 
 }
 
@@ -217,16 +304,26 @@ padding-top: 0.5%;
 position:relative;
 width:100%;
 }
-
-.hat-img{
-  width:20%;
+.logo1{
+  padding-top: 10%;
+font-weight: 300;
+font-family: 'Noto Sans HK', sans-serif;
+  font-size: 3rem;
+  line-height: 60px;
+  color:#fff;
+  padding-left: 2%;
 }
 
-.logo{
-  font-family: 'Cinzel Decorative', cursive;
-  font-size: 3.6rem;
-  color:#0f4c81;
+.logo2{
+  position:relative;
+  bottom:1rem;
+  display:inline;
+  width:6%;
 }
+
+
+
+
 /*********************** NAVBAR ITEMS END**********************************/
 
 /*********************** NAVLINK TRANSITIONS START**********************************/
@@ -240,7 +337,7 @@ width:100%;
 }
 
 .nav-link:hover::after{
-  width:90%;
+  width:98%;
   transition: width .3s;
 }
 /*********************** NAVLINK TRANSITIONS END**********************************/
@@ -251,58 +348,66 @@ width:100%;
 #stock-body{
   margin-left: 0;
 }
+
 .stock-header-header{
   position:relative;
-  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 192, 255, 0.5)),url('images/wall-street.png');
+   background-image: linear-gradient(to top , rgba(0,113,233, 0.6), rgba(0,147,202, 0.8)),url('images/wall-street.png');
+
   height: 56vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
 .stock-body-topics{
   padding-top: 2%;
+  font-weight: 300;
   text-align: center;
+font-family: 'Noto Sans HK', sans-serif;
 }
-.stock-links{
+.s-b-f-links{
   position:relative;
-  color:inherit;
+  color:#28334aff;
 
 }
-.stock-links:after {
+.s-b-f-links:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
+  margin-bottom: -2%;
   content: "";
   display: block;
-  height: 2px;
+  height: 1px;
   left: 50%;
   position: absolute;
   background: #fff;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
+  color:black;
 }
-.stock-links:hover:after {
 
+
+.s-b-f-links:hover:after {
   width: 100%;
   left: 0;
 }
-.fa-money-bill{
+.fa-chart-line{
   color:green;
 }
 .stock-body-intro{
   position:absolute;
   background:rgba(255,255,255,0.3);
   margin-top: 3%;
-  font-size: 1.5vw;
-  color:black;
-  font-weight: bold;
+  font-size: 1.3vw;
+  color:#28334aff;
+  font-weight: 300;
   width:40%;
   padding-bottom: 0;
   margin-bottom: 2%;
  top:10rem;
   left:32%;
-  font-family: 'Titillium Web', sans-serif;
   text-align: center;
+font-family: 'Noto Sans HK', sans-serif;
 }
 
 .stock-navbar{
@@ -355,22 +460,29 @@ scroll-behavior: (slow smooth);
 /*********************** STOCK MARKET + DIVIDEND START**********************************/
 
 #stock-intro{
+  font-family: 'Noto Sans HK', sans-serif;
+font-weight: 300;
+line-height: 1.7;
+background-color: #78C0E0;
 
-font-family: 'Titillium Web', sans-serif;
-  background-color: #2bb2bb;
   padding-top: 1.5%;
   padding-left: 1%;
   padding-bottom: 1.5%;
 
 
 }
+.long{
+  height: 80%;
+  width:100%;
+}
 /* Quotes Section */
 
 #stock-quotes{
-font-family: 'Titillium Web', sans-serif;
+  font-family: 'Noto Sans HK', sans-serif;
 padding-top: 1.5%;
-  padding-bottom:5%;
-  background-color: #7fdbda;
+font-weight: 300;
+
+  background-color: #449DD1;
 }
 
 .horizontal-line{
@@ -388,7 +500,7 @@ padding-top: 1.5%;
 }
 .SQ-headings{
   text-align: center;
-  font-weight: bold;
+  font-size: 20%;
 }
 
 .inner{
@@ -400,6 +512,7 @@ padding-top: 1.5%;
 }
 .chart-h{
   color:blue;
+  font-size: 1rem;
 }
 .chart-h:hover{
   text-decoration: underline;
@@ -413,30 +526,57 @@ padding-top: 1.5%;
 /*********************** LONG VS SHORT;VOTING RIGHTS;HOW-TO START**********************************/
 #stock-lvs{
   padding-top: 1.5%;
-  font-family: 'Titillium Web', sans-serif;
-  background-color: #2bb2bb;
+  font-family: 'Noto Sans HK', sans-serif;
+  line-height: 1.7;
+  font-weight: 300;
+
+  background-color: #78C0E0;
   padding-bottom: 1.5%;
   padding-left: 1%;
 }
 
 #voting-rights{
-font-family: 'Titillium Web', sans-serif;
+  font-family: 'Noto Sans HK', sans-serif;
 padding-top: 1.5%;
+line-height: 1.7;
+font-weight: 300;
+
   padding-left: 1%;
   padding-bottom: 1.5%;
-  background-color: #7fdbda;
+  background-color: #449DD1;
 
 }
 
 
 #how-to{
-font-family: 'Titillium Web', sans-serif;
+  font-family: 'Noto Sans HK', sans-serif;
+  font-weight: 300;
+line-height: 1.7;
 padding-top:1.5%;
   padding-left: 1%;
   padding-bottom: 1.5%;
-  background-color: #2bb2bb;
+  background-color: #78C0E0;
 }
+
+.GTSI{
+  margin-left: 0.6%;
+}
+
+.chart{
+  width:94%;
+  margin-top: 4%;
+  margin-left: 3%;
+}
+.timeline{
+  margin-top: 2%;
+}
+.age,.bank,.fees,.goal,.learn{
+  margin-left: 0;
+  padding-left: 0;
+}
+
 /*********************** LONG VS SHORT;VOTING RIGHTS;HOW-TO END**********************************/
+
 
 
 /*********************** FOOTER START**********************************/
@@ -444,32 +584,44 @@ padding-top:1.5%;
 /* Footer for stock page */
 footer{
   position: relative;
-  font-family: 'Titillium Web', sans-serif;
-    bottom: 0;
+  font-family: 'Noto Sans HK', sans-serif;
     width: 100%;
-    padding-top: 1%;
-    line-height: 0.3;
-    height: 5rem;
+    padding-top: 0.6%;
+    height:3.2rem;
+    font-weight: 100;
+    color:black;
     text-align: center;
-    background-color: #7fdbda;
+    opacity:0.9
 
 
 
 }
+.copyright{
+  position:relative;
+
+
+}
+
 /* Footer for home page */
 .foot{
-  position: absolute;
-  font-family: 'Titillium Web', sans-serif;
+
+  font-family: 'Noto Sans HK', sans-serif;
+  font-weight: 100;
+  padding-top: 4%;
     bottom: 0;
     width: 100%;
-    padding-top: 1%;
-    line-height: 0.3;
-    height: 5rem;
+
+    height: 3.2rem;
     text-align: center;
-    background-color: transparent;
+    color:white;
+    margin-top: 1.5%;
+    opacity:0.8;
 
 
 
+  }
+  .stock{
+    background-color: #78C0E0;
   }
   /*********************** FOOTER END**********************************/
   /* ****************************END OF STOCK SECTION************************ */
@@ -482,119 +634,133 @@ footer{
   /*********************** BOND INTRO PAGE**********************************/
 
   .bond-header-header{
-    position:relative;
-    background-image: linear-gradient(to bottom, rgba(149, 244, 139, 0.5), rgba(39, 204, 20, 0.7)),url('images/investment.png');
-    height: 100%;
 
-      /* Creates the parallax scrolling effect */
-      background-attachment: fixed;
+
+      position:relative;
+       background-image: linear-gradient(to top , rgba(0,113,233, 0.6), rgba(0,147,202, 0.8)),url('images/investment.png');
+         /* Creates the parallax scrolling effect */
+      height: 56vw;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-
-
-
-    height: 56vw;
   }
 
+.s-b-f-title{
+  font-size: 2vw;
+
+  font-weight: 300;
+  padding-top: 1.5%;
+  font-family: 'Noto Sans HK', sans-serif;
+}
   .bond-body-intro{
+    font-family: 'Noto Sans HK', sans-serif;
+font-weight: 300;
     position:absolute;
     background:rgba(255,255,255,0.3);
     margin-top: 3%;
-    font-size: 1.5vw;
-    color:black;
-    font-weight: bold;
+    font-size: 1.3vw;
     width:40%;
-    left:30%;
-    top:10rem;
-    height:
-    bottom:20%;
     padding-bottom: 0;
     margin-bottom: 2%;
+   top:10rem;
+    left:32%;
     text-align: center;
   }
 .bond-body-topics{
-  color: green;
+  color:green;
+  font-family: 'Noto Sans HK', sans-serif;
+
 }
 
-.bond-links{
-  color:black;
-}
 
-#bond-intro{
+#bond-intro, #mutual-funds{
+  font-family: 'Noto Sans HK', sans-serif;
+font-weight: 300;
   padding-top: 1.5%;
   padding-bottom: 1.5%;
   padding-left: 1%;
-  background-color: #b6eb7a;
-
+  background-color: #78C0E0;
 }
+
 .money{
   position:relative;
   width:200px;
   margin-top: 60%;
 }
-#terminology{
-  background-color:#a1dd70;
+#terminology, #index-funds{
+  font-family: 'Noto Sans HK', sans-serif;
+font-weight: 300;
+  background-color: #449DD1;
   padding-top: 1.5%;
   padding-left: 1%;
   margin-right: 0;
   padding-bottom: 1.5%;
 }
 
-#bond-quotes{
+#bond-quotes, #etf{
+  font-family: 'Noto Sans HK', sans-serif;
+font-weight: 300;
 padding-top: 1.5%;
-  padding-bottom:5%;
-  background-color: #b6eb7a;
+  background-color: #78C0E0;
 
 }
 
-#bond-interest{
+#bond-interest, #income-trusts{
+  font-family: 'Noto Sans HK', sans-serif;
+font-weight: 300;
   padding-top: 1.5%;
   padding-left: 1%;
   padding-bottom: 1.5%;
-  background-color:#a1dd70;
+  background-color: #449DD1;
 
 }
 #bond-gov-gic{
+  font-family: 'Noto Sans HK', sans-serif;
+font-weight: 300;
   padding-top: 1.5%;
   padding-left: 1%;
   padding-bottom: 1.5%;
-  background-color: #b6eb7a;
-
-}
-.bond-footer{
-  position: relative;
-  font-family: 'Titillium Web', sans-serif;
-    bottom: 0;
-    width: 100%;
-    padding-top: 1%;
-    line-height: 0.3;
-    height: 5rem;
-    text-align: center;
-background-color:#a1dd70;
+  background-color: #78C0E0;
 
 }
 
+.bond-links:hover:after {
+  width: 100%;
+  left: 0;
+}
+/*********************** END OF BOND SECTION **********************************/
 
+/*********************** FUNDS PAGE START**********************************/
 
-
-
-
-
+/*********************** FUNDS INTRO PAGE START**********************************/
 
 
  .fund-header-header{
    position:relative;
-   background-image: linear-gradient(to bottom, rgba(252, 185, 201, 0.5), rgba(242, 104, 136, 0.7)),url('images/funds.jpg');
-   height: 100%;
-
+   background-image: linear-gradient(to top , rgba(0,113,233, 0.6), rgba(0,147,202, 0.8)),url('images/funds.jpg');
      /* Creates the parallax scrolling effect */
-     background-attachment: fixed;
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
-
-
-
    height: 56vw;
  }
+
+ .fund-body-intro{
+   font-family: 'Noto Sans HK', sans-serif;
+   font-weight: 300;
+   position:absolute;
+   background:rgba(255,255,255,0.3);
+   margin-top: 3%;
+   font-size: 1.3vw;
+   width:40%;
+   padding-bottom: 0;
+   margin-bottom: 2%;
+  top:10rem;
+   left:32%;
+   text-align: center;
+ }
+.fund-body-topics{
+  color:green;
+ font-family: 'Noto Sans HK', sans-serif;
+}
+/*********************** FUNDS INTRO PAGE END**********************************/
