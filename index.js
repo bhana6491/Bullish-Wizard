@@ -12,6 +12,7 @@ $(window).scroll(function(e) {
 $(".fa-github").hover(function(){
   $(".fa-github").addClass('fa-3x')
 })
+  var counter = 2;
 $(".navbar-toggler").click(function(){
   $(".stock-body-intro").toggle();
   $('.carousel').hide();
@@ -22,6 +23,7 @@ $(".navbar-toggler").click(function(){
     $('footer').show();
 
 });
+
 
 });
 

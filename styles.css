@@ -1,12 +1,5 @@
 
 /* Core HTML Elements */
-
-
-
-
-
-
-
 html{
   scroll-behavior: smooth;
   height: 100%;
@@ -21,7 +14,7 @@ body{
   font-family: 'Noto Sans HK', sans-serif;
 }
 #title{
-  background: linear-gradient(180deg, #035aa6  0%,#3abeff  12%);
+  background: linear-gradient(180deg, #1089ff  0%,#3abeff  12%);
 }
 hr{
    border-top: 0.5px solid white;
@@ -57,12 +50,7 @@ a{
 a:hover{
   color:black;
 }
-/* hr{
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border: 1px solid #090979;
 
-} */
 .underline{
   display: inline-block;
   margin-top: 0;
@@ -94,16 +82,34 @@ background-color: #3abeff;
   .stock-header-header, .bond-header-header, .fund-header-header{
     background-attachment: fixed;
   }
+  .stock-body-intro{
+  left:30%;
+  }
   #stock-quotes, #bond-quotes{
     padding-bottom:4%;
-
+    padding-right: 30%;
+    padding-left: 30%;
+  }
+  #stock-intro,#bond-intro,#bond-interest, #bond-gov-gic,#stock-lvs,#terminology, #voting-rights, #how-to {
+    padding-right: 30%;
+    padding-left: 30%;
   }
 
-  .bank,.fees{
-    margin-top: 32%;
+
+  .age{
+    margin-top: 8%;
   }
-  .goal,.learn{
-    margin-top: 33%;
+   .fees{
+     margin-top: 32%;
+   }
+   .learn{
+     margin-top: 34%;
+   }
+  .bank{
+    margin-top: 42%;
+  }
+  .goal{
+    margin-top: 28.5%;
   }
   .guide{
     font-size: 1rem;
@@ -120,9 +126,34 @@ background-color: #3abeff;
 .stock-header-header, .bond-header-header, .fund-header-header{
   background-attachment: fixed;
 }
-#stock-quotes, #bond-quotes{
-  padding-bottom:5%;
+.stock-body-intro{
+left:30%;
 }
+#stock-quotes, #bond-quotes{
+  padding-bottom:4%;
+  padding-right: 27%;
+  padding-left: 27%;
+}
+#stock-intro,#bond-intro,#bond-interest, #bond-gov-gic,#stock-lvs,#terminology, #voting-rights, #how-to {
+  padding-right: 27%;
+  padding-left: 27%;
+}
+
+  .age{
+    margin-top: 7%;
+  }
+   .fees{
+     margin-top: 8%;
+   }
+   .learn{
+     margin-top: 11%;
+   }
+  .bank{
+    margin-top: 41%;
+  }
+  .guide{
+    font-size: 1rem;
+  }
 
 }
 /*
@@ -144,7 +175,13 @@ background-color: #3abeff;
   background-attachment: fixed;
 }
 #stock-quotes, #bond-quotes{
-  padding-bottom: 8%;
+  padding-bottom:4%;
+  padding-right: 23%;
+  padding-left: 23%;
+}
+#stock-intro,#bond-intro,#bond-interest, #bond-gov-gic,#stock-lvs,#terminology, #voting-rights, #how-to {
+  padding-right: 23%;
+  padding-left: 23%;
 }
   }
 
@@ -347,6 +384,9 @@ font-family: 'Noto Sans HK', sans-serif;
 /*********************** STOCK HEADER START**********************************/
 #stock-body{
   margin-left: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+
+
 }
 
 .stock-header-header{
@@ -364,7 +404,7 @@ font-family: 'Noto Sans HK', sans-serif;
   padding-top: 2%;
   font-weight: 300;
   text-align: center;
-font-family: 'Noto Sans HK', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 .s-b-f-links{
   position:relative;
@@ -396,23 +436,23 @@ font-family: 'Noto Sans HK', sans-serif;
 }
 .stock-body-intro{
   position:absolute;
-  background:rgba(255,255,255,0.3);
+  background:rgba(255,255,255,0.5);
   margin-top: 3%;
   font-size: 1.3vw;
-  color:#28334aff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  color:#1c2b2d;
   font-weight: 300;
   width:40%;
   padding-bottom: 0;
   margin-bottom: 2%;
  top:10rem;
-  left:32%;
   text-align: center;
-font-family: 'Noto Sans HK', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .stock-navbar{
   height:10%;
-  position:absolute;
+  position:sticky;
   width:100%;
   right:0.08%;
   height: auto;
@@ -460,27 +500,24 @@ scroll-behavior: (slow smooth);
 /*********************** STOCK MARKET + DIVIDEND START**********************************/
 
 #stock-intro{
-  font-family: 'Noto Sans HK', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 font-weight: 300;
 line-height: 1.7;
 background-color: #78C0E0;
 
   padding-top: 1.5%;
-  padding-left: 1%;
+  /* padding-left: 1%; */
   padding-bottom: 1.5%;
 
+}
 
-}
-.long{
-  height: 80%;
-  width:100%;
-}
 /* Quotes Section */
 
 #stock-quotes{
-  font-family: 'Noto Sans HK', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 padding-top: 1.5%;
 font-weight: 300;
+
 
   background-color: #449DD1;
 }
@@ -520,28 +557,32 @@ font-weight: 300;
 }
 .SQ-explanations{
   position:absolute;
+  right: 1%;
 }
 /*********************** STOCK MARKET + DIVIDEND END**********************************/
 
 /*********************** LONG VS SHORT;VOTING RIGHTS;HOW-TO START**********************************/
 #stock-lvs{
   padding-top: 1.5%;
-  font-family: 'Noto Sans HK', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.7;
   font-weight: 300;
 
   background-color: #78C0E0;
   padding-bottom: 1.5%;
-  padding-left: 1%;
 }
 
+.long{
+  width: 60%;
+  height: 40%;
+  margin-left: 17%;
+}
 #voting-rights{
-  font-family: 'Noto Sans HK', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 padding-top: 1.5%;
 line-height: 1.7;
 font-weight: 300;
 
-  padding-left: 1%;
   padding-bottom: 1.5%;
   background-color: #449DD1;
 
@@ -549,11 +590,10 @@ font-weight: 300;
 
 
 #how-to{
-  font-family: 'Noto Sans HK', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
 line-height: 1.7;
 padding-top:1.5%;
-  padding-left: 1%;
   padding-bottom: 1.5%;
   background-color: #78C0E0;
 }
@@ -650,10 +690,10 @@ footer{
 
   font-weight: 300;
   padding-top: 1.5%;
-  font-family: 'Noto Sans HK', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
   .bond-body-intro{
-    font-family: 'Noto Sans HK', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 font-weight: 300;
     position:absolute;
     background:rgba(255,255,255,0.3);
@@ -666,19 +706,19 @@ font-weight: 300;
     left:32%;
     text-align: center;
   }
+
 .bond-body-topics{
   color:green;
-  font-family: 'Noto Sans HK', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 
 }
 
 
 #bond-intro, #mutual-funds{
-  font-family: 'Noto Sans HK', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 font-weight: 300;
   padding-top: 1.5%;
   padding-bottom: 1.5%;
-  padding-left: 1%;
   background-color: #78C0E0;
 }
 
@@ -688,17 +728,16 @@ font-weight: 300;
   margin-top: 60%;
 }
 #terminology, #index-funds{
-  font-family: 'Noto Sans HK', sans-serif;
-font-weight: 300;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
   background-color: #449DD1;
   padding-top: 1.5%;
-  padding-left: 1%;
   margin-right: 0;
   padding-bottom: 1.5%;
 }
 
 #bond-quotes, #etf{
-  font-family: 'Noto Sans HK', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 font-weight: 300;
 padding-top: 1.5%;
   background-color: #78C0E0;
@@ -706,19 +745,17 @@ padding-top: 1.5%;
 }
 
 #bond-interest, #income-trusts{
-  font-family: 'Noto Sans HK', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 font-weight: 300;
   padding-top: 1.5%;
-  padding-left: 1%;
   padding-bottom: 1.5%;
   background-color: #449DD1;
 
 }
 #bond-gov-gic{
-  font-family: 'Noto Sans HK', sans-serif;
-font-weight: 300;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
   padding-top: 1.5%;
-  padding-left: 1%;
   padding-bottom: 1.5%;
   background-color: #78C0E0;
 
@@ -746,7 +783,7 @@ font-weight: 300;
  }
 
  .fund-body-intro{
-   font-family: 'Noto Sans HK', sans-serif;
+   font-family: 'Source Sans Pro', sans-serif;
    font-weight: 300;
    position:absolute;
    background:rgba(255,255,255,0.3);
@@ -761,6 +798,6 @@ font-weight: 300;
  }
 .fund-body-topics{
   color:green;
- font-family: 'Noto Sans HK', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 /*********************** FUNDS INTRO PAGE END**********************************/
