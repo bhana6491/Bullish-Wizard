@@ -8,7 +8,11 @@ $(window).scroll(function(e) {
 
 });
 
-
+// $(".start").click(function() {
+//     $('html,body').animate({
+//         scrollTop: $(".carousel").offset().top},
+//         'fast');
+// });
 $(".fa-github").hover(function(){
   $(".fa-github").addClass('fa-3x')
 })

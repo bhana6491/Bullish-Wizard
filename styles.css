@@ -11,22 +11,18 @@ thead{
 
 body{
   height:100%;
-  font-family: 'Noto Sans HK', sans-serif;
 }
-#title{
-  background: linear-gradient(180deg, #1089ff  0%,#3abeff  12%);
+#landing-main{
+  background: linear-gradient(180deg, #1089ff  0%,#3abeff  5%);
 }
 hr{
    border-top: 0.5px solid white;
    width: 99%;
 }
 /* Sub Headings for different pages */
-h3{
-  font-weight: bold;
-}
+
 h4{
   font-size: 1.2rem;
-  font-weight:bolder;
 }
 h5{
   font-size: 3rem;
@@ -35,7 +31,13 @@ h5{
 h6{
   font-size: 1.5rem;
 }
+h8{
+  font-size: 4.8rem;
+  color:white;
+  margin-top: 10%;
+  padding-bottom: 5%;
 
+}
 span{
   font-weight: bold;
 }
@@ -44,8 +46,6 @@ p{
 }
 a{
   text-decoration:none !important;
-
-
 }
 a:hover{
   color:black;
@@ -64,9 +64,73 @@ background:rgba(255,255,255, 0.3);
 
 .landing{
 margin-bottom: 0;
-background-color: #3abeff;
+height:60vw;
+background-color: #1089ff;
+}
+.action-phrase{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.start-button{
+  scroll-behavior: (slow smooth);
+  cursor: pointer;
+  border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius:10px 10px 10px 10px;
+background:white;
+  padding-left: 3%;
+  padding-right:3%;
+  padding-top: 2%;
+  border:solid 2px white;
+  padding-bottom: 1.5%;
+  color:black;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1rem;
 
 }
+
+.start-button:hover{
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  color:#1089ff;
+  background-color: white;
+  }
+.fa-search-dollar{
+  display: inline-block;
+}
+.magnifying-glass{
+  font-size: 2rem;
+  padding-right: 1%;
+}
+
+/* .gg{
+  width:10%;
+  padding-left: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-right:0;
+} */
+.cta-column{
+  height:31vw;
+  color:white;
+  line-height: 3.5rem;
+  text-align: left;
+  font-family: 'Noto Sans HK', sans-serif;
+  margin-right: 0;
+  font-weight: 300;
+}
+.cta-row{
+  margin-right: 0;
+}
+.capture-statement
+{
+  width:100%;
+  padding-left: 4%;
+  padding-top: 18%;
+
+}
+
+
 .coll{
   color: white;
   height: 20px;
@@ -90,7 +154,7 @@ background-color: #3abeff;
     padding-right: 30%;
     padding-left: 30%;
   }
-  #stock-intro,#bond-intro,#bond-interest, #bond-gov-gic,#stock-lvs,#terminology, #voting-rights, #how-to {
+  #stock-intro,#bond-intro,#bond-interest, #bond-gov-gic,#stock-lvs,#terminology, #voting-rights, #how-to,#mutual-funds,#index-funds,#etf,#income-trusts  {
     padding-right: 30%;
     padding-left: 30%;
   }
@@ -123,6 +187,7 @@ background-color: #3abeff;
   left: 30%;
   max-width: 40%;
 }
+
 .stock-header-header, .bond-header-header, .fund-header-header{
   background-attachment: fixed;
 }
@@ -134,7 +199,7 @@ left:30%;
   padding-right: 27%;
   padding-left: 27%;
 }
-#stock-intro,#bond-intro,#bond-interest, #bond-gov-gic,#stock-lvs,#terminology, #voting-rights, #how-to {
+#stock-intro,#bond-intro,#bond-interest, #bond-gov-gic,#stock-lvs,#terminology, #voting-rights, #how-to,#mutual-funds,#index-funds,#etf,#income-trusts  {
   padding-right: 27%;
   padding-left: 27%;
 }
@@ -179,7 +244,7 @@ left:30%;
   padding-right: 23%;
   padding-left: 23%;
 }
-#stock-intro,#bond-intro,#bond-interest, #bond-gov-gic,#stock-lvs,#terminology, #voting-rights, #how-to {
+#stock-intro,#bond-intro,#bond-interest, #bond-gov-gic,#stock-lvs,#terminology, #voting-rights, #how-to,#mutual-funds,#index-funds,#etf,#income-trusts {
   padding-right: 23%;
   padding-left: 23%;
 }
@@ -282,26 +347,49 @@ left:30%;
 
 /*********************** CAROUSEL ITEMS START**********************************/
 .carousel-img{
-  border:4px solid black;
+  border:2.5px solid white;
   position:relative;
+  border-radius: 7px;
   max-height: auto;
-  margin-top: 3%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+
 }
 
-
+.cta{
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: -1%;
+}
+.curved-div{
+  transform: rotate(180deg);
+}
+.slides{
+  background-color: #1089ff;
+  width:100%;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 3%;
+}
 
 .carousel{
-  display:flex;
-  background: #3abeff;
+  background: #1089ff;
 }
 
 .carousel-indicators{
   position:absolute;
   top:100%;
 }
+.chewy{
+  padding-top: 0;
+  margin-top: 0;
+}
+
+
 .carousel-control-prev-icon,.carousel-control-next-icon {
   position:relative;
-  bottom: 15%;
+  bottom: 12%;
 }
 .blurb{
   opacity:0.8;
@@ -329,12 +417,14 @@ padding-top: 0.5%;
   font-size: 2.1rem;
   font-weight: 300;
   text-align: center;
+  opacity: 1;
 }
 nav .navbar-nav li a{
-  color: #e3e3e3 !important;
+  color: white !important;
   }
 .navbar-brand{
-
+}
+.collapse{
 }
 
 .navbar{
@@ -343,17 +433,18 @@ width:100%;
 }
 .logo1{
   padding-top: 10%;
-font-weight: 300;
-font-family: 'Noto Sans HK', sans-serif;
+font-weight: 400;
+font-family: 'Assistant', sans-serif;
   font-size: 3rem;
   line-height: 60px;
   color:#fff;
-  padding-left: 2%;
+  letter-spacing: 0.05rem;
 }
 
 .logo2{
   position:relative;
   bottom:1rem;
+  transform: rotate(14deg);
   display:inline;
   width:6%;
 }
@@ -382,16 +473,14 @@ font-family: 'Noto Sans HK', sans-serif;
 /************************ STOCK PAGE START ***************************************/
 
 /*********************** STOCK HEADER START**********************************/
-#stock-body{
+#wall-street{
   margin-left: 0;
   font-family: 'Source Sans Pro', sans-serif;
-
-
 }
 
 .stock-header-header{
   position:relative;
-   background-image: linear-gradient(to top , rgba(0,113,233, 0.6), rgba(0,147,202, 0.8)),url('images/wall-street.png');
+background-image: linear-gradient(to top , rgba(0,113,233, 0.6), rgba(0,147,202, 0.8)),url('images/wall1-street.png');
 
   height: 56vw;
   background-position: center;
@@ -402,7 +491,7 @@ font-family: 'Noto Sans HK', sans-serif;
 
 .stock-body-topics{
   padding-top: 2%;
-  font-weight: 300;
+  font-weight: bold;
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -436,12 +525,12 @@ font-family: 'Noto Sans HK', sans-serif;
 }
 .stock-body-intro{
   position:absolute;
-  background:rgba(255,255,255,0.5);
+  background:rgba(255,255,255,0.6);
   margin-top: 3%;
   font-size: 1.3vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
   color:#1c2b2d;
-  font-weight: 300;
+  /* font-weight: bold; */
   width:40%;
   padding-bottom: 0;
   margin-bottom: 2%;
@@ -501,7 +590,7 @@ scroll-behavior: (slow smooth);
 
 #stock-intro{
   font-family: 'Source Sans Pro', sans-serif;
-font-weight: 300;
+/* font-weight: 300; */
 line-height: 1.7;
 background-color: #78C0E0;
 
@@ -643,23 +732,19 @@ footer{
 }
 
 /* Footer for home page */
-.foot{
+/* .foot{
+  position:relative;
 
   font-family: 'Noto Sans HK', sans-serif;
   font-weight: 100;
-  padding-top: 4%;
-    bottom: 0;
     width: 100%;
-
-    height: 3.2rem;
     text-align: center;
     color:white;
     margin-top: 1.5%;
     opacity:0.8;
 
 
-
-  }
+  } */
   .stock{
     background-color: #78C0E0;
   }
@@ -696,7 +781,9 @@ footer{
     font-family: 'Source Sans Pro', sans-serif;
 font-weight: 300;
     position:absolute;
-    background:rgba(255,255,255,0.3);
+    background:rgba(255,255,255,0.6);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+
     margin-top: 3%;
     font-size: 1.3vw;
     width:40%;
@@ -710,7 +797,7 @@ font-weight: 300;
 .bond-body-topics{
   color:green;
   font-family: 'Source Sans Pro', sans-serif;
-
+  font-weight: bold;
 }
 
 
@@ -786,7 +873,8 @@ font-weight: 300;
    font-family: 'Source Sans Pro', sans-serif;
    font-weight: 300;
    position:absolute;
-   background:rgba(255,255,255,0.3);
+   background:rgba(255,255,255,0.6);
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
    margin-top: 3%;
    font-size: 1.3vw;
    width:40%;
@@ -797,7 +885,7 @@ font-weight: 300;
    text-align: center;
  }
 .fund-body-topics{
-  color:green;
   font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
 }
 /*********************** FUNDS INTRO PAGE END**********************************/
