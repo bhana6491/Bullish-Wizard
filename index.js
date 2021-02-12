@@ -8,28 +8,11 @@ $(window).scroll(function(e) {
 
 });
 
-// $(".start").click(function() {
-//     $('html,body').animate({
-//         scrollTop: $(".carousel").offset().top},
-//         'fast');
-// });
-$(".fa-github").hover(function(){
-  $(".fa-github").addClass('fa-3x')
-})
-  var counter = 2;
-$(".navbar-toggler").click(function(){
-  $(".stock-body-intro").toggle();
-  $('.carousel').hide();
-  $('footer').hide();
-  $(".navbar-toggler").click(function(){
-    $(".stock-body-intro").toggle();
-    $('.carousel').show();
-    $('footer').show();
-
-});
 
 
-});
+
+
+
 
 
 
