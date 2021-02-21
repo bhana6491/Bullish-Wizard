@@ -10,7 +10,10 @@ $(window).scroll(function(e) {
 
 
 
+$(".navbar-toggler").click(function(){
+  $("a").removeClass("effect");
 
+});
 
 
 

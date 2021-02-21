@@ -20,7 +20,7 @@ hr{
 /* Sub Headings for different pages */
 
 h4{
-  font-size: 1.2rem;
+  font-size: 9em;
 }
 h5{
   font-size: 3rem;
@@ -191,7 +191,7 @@ color:#1089ff;
   height: 20px;
 }
 
-.nav-link::after{
+.effect::after{
   content:"";
   display: block;
   width:0;
@@ -201,7 +201,7 @@ color:#1089ff;
 }
 
 
-.nav-link:hover::after{
+.effect:hover::after{
   width:99%;
   transition: width .3s;
 }
@@ -311,7 +311,8 @@ left:29%;
 .SQ-explanations{
   padding-top: 1%;
 }
-#stock-intro,#bond-intro,#bond-interest, #bond-gov-gic,#stock-lvs,#terminology, #voting-rights, #how-to,#mutual-funds,#index-funds,#etf,#income-trusts,#dividends {
+#stock-intro,#bond-intro,#bond-interest, #bond-gov-gic,#stock-lvs,#terminology, #voting-rights, #how-to,#mutual-funds,#index-funds,#etf,#income-trusts,#
+ {
   padding-right: 15%;
   padding-left: 15%;
 }
@@ -692,9 +693,10 @@ background-color: #78C0E0;
 #dividends{
   font-family: 'Source Sans Pro', sans-serif;
   padding-top: 1.5%;
+  line-height: 1.7;
+
   font-weight: 300;
   background-color: #449DD1;
-  opacity: 0.7;
 
 }
 /* Quotes Section */
@@ -860,7 +862,7 @@ footer{
 .s-b-f-title{
   font-size: 2vw;
 
-  font-weight: 600;
+  font-weight: 400;
   padding-top: 1.5%;
   font-family: 'Source Sans Pro', sans-serif;
 }
