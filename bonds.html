@@ -1,350 +1,473 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Bullish Wizard-Bonds</title>
 
-    <!-- Favicon -->
-    <link rel="icon" href="images/logo.png">
-    <!-- Font awesome -->
-    <script src="https://kit.fontawesome.com/9c98dc540b.js" crossorigin="anonymous"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Bullish Wizard-Bonds</title>
 
-    <!-- Google Fonts CDN -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500&display=swap" rel="stylesheet" href = "styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300;500&display=swap" rel="stylesheet" href = 'styles.css'>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet" href='styles.css'>
+  <!-- Favicon -->
+  <link rel="icon" href="images/Magic-Hat.png">
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/9c98dc540b.js" crossorigin="anonymous"></script>
 
-
-    <!-- Animation CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-
-    <!-- Bootstrap CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- Bootstrap References -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-  </head>
-      <body class = 'bond-body'>
-        <section id='bond-header'>
-  <div class='container-fluid bond-header-header'>
-
-    <nav class='navbar navbar-expand-md navbar-light '>
-
-      <a class='navbar-brand' href="index.html"> <img class = 'logo2' src="images/Magic-Hat.png" alt=""><span class = 'logo1'>Bullish Wizard</span>  <span class = 'logo1'></span>  </a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-        <!-- Nav Links -->
-        <ul class='navbar-nav ml-auto animate__animated'>
-          <li class='nav-item'>
-            <a class="nav-link effect" href="stocks.html">STOCKS</a>
-          </li>
-
-          <li class='nav-item'>
-            <a class="nav-link effect" href="bonds.html">BONDS</a>
-          </li>
-
-          <li class='nav-item'>
-            <a class="nav-link effect" href="funds.html">FUNDS</a>
-          </li>
-
-        </ul>
-      </div>
-
-    </nav>
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500&display=swap" rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300;500;600&display=swap" rel="stylesheet" href='styles.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet" href='styles.css'>
 
 
+  <!-- Animation CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 
-  </div>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <div class="container-fluid bond-body-intro">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Bootstrap References -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body class='bond-body'>
+  <section id='bond-header'>
+    <div class='container-fluid bond-header-header'>
+
+      <nav class='navbar navbar-expand-md navbar-light '>
+
+        <a class='navbar-brand' href="index.html"> <img class='logo2' src="images/Magic-Hat.png" alt=""><span class='logo1'>Bullish Wizard</span> <span class='logo1'></span> </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <!-- Nav Links -->
+          <ul class='navbar-nav ml-auto animate__animated'>
+            <li class='nav-item'>
+              <a class="nav-link effect" href="stocks.html">STOCKS</a>
+            </li>
+
+            <li class='nav-item'>
+              <a class="nav-link effect" href="bonds.html">BONDS</a>
+            </li>
+
+            <li class='nav-item'>
+              <a class="nav-link effect" href="funds.html">FUNDS</a>
+            </li>
+
+          </ul>
+        </div>
+
+      </nav>
 
 
-    <h3 class='s-b-f-title'>BONDS</h3>
-    <p>This section will cover the basics of the bond market as well as other various fixed income securities</p>
-    <p>You can explore the following topics:</p>
 
-    <div class="bond-body-topics">
-
-
-      <p class=> <a class='s-b-f-links underline-intro' href="#bond-intro">BOND MARKET</a> </p>
-      <p class=> <a class='s-b-f-links underline-intro' href="#terminology">BOND STRUCTURE</a> </p>
-      <p class=><a class='s-b-f-links underline-intro' href="#bond-quotes">BOND QUOTATIONS</a> </p>
-      <p class=><a class='s-b-f-links  underline-intro' href="#bond-interest">RISKS</a> </p>
-      <p class=> <a class='s-b-f-links underline-intro' href="#bond-gov-gic">GUARANTEED INVESTMENT CERTIFICATES</a> </p>
-
-      <div class="container arrow-positioning">
-        <a href="#bond-intro">
-          <div class="arrow bounce"></div>
-        </a>
-      </div>
     </div>
 
-
-  </div>
-
+    <div class="container-fluid bond-body-intro">
 
 
-</section>
+      <h3 class='s-b-f-title'>BONDS</h3>
+      <p>This section will cover the basics of the bond market as well as other various fixed income securities</p>
+      <p>You can explore the following topics:</p>
 
-<section id = 'bond-intro'>
-  <div class="container-fluid">
-    <div class="row">
-<div class="col-lg-12">
-  <h3 class = 'underline'>Bond Market</h3>
+      <div class="bond-body-topics">
 
-    <p>
-    We already discussed the life cycle of a stock but let's dive a little bit deeper into what possessing a share really means.
-    As a shareholder, you are <b>obliged</b> to participate in a company's <b>wins</b> and <b>losses</b>. The <b>value</b> of stocks is constantly <b>fluctuating</b> and it is up to you to decide when to <b>enter</b> and <b>exit</b> the market.
-    Traditionally, if you <b>sell</b> a share when the price is <b>higher</b> than when you first bought it, you would realize a <b>capital gain</b>(profit).
-    Looking at it from the other side, if you <b>sell</b>  a share when the price is <b>lower</b> than when you first bought it, you would realize a <b>capital loss</b>(defecit).
-    The possibility of capital gain is what makes investing in stocks so <b>attractive</b> to investors.
-  </p>
 
-</div>
+        <p class=> <a class='s-b-f-links underline-intro' href="#bond-intro">BOND MARKET</a> </p>
+        <p class=> <a class='s-b-f-links underline-intro' href="#terminology">BOND STRUCTURE</a> </p>
+        <p class=><a class='s-b-f-links underline-intro' href="#bond-quotes">BOND QUOTATIONS</a> </p>
+        <p class=><a class='s-b-f-links  underline-intro' href="#bond-interest">RISKS</a> </p>
+        <p class=> <a class='s-b-f-links underline-intro' href="#bond-gov-gic">GUARANTEED INVESTMENT CERTIFICATES</a> </p>
 
-</div>
-
-<div class="row">
-
-<div class="col-lg-12">
-  <h3 class = 'underline'>Who are they for?</h3>
-
-  <p>
-  We already discussed the life cycle of a stock but let's dive a little bit deeper into what possessing a share really means.
-  As a shareholder, you are <b>obliged</b> to participate in a company's <b>wins</b> and <b>losses</b>. The <b>value</b> of stocks is constantly <b>fluctuating</b> and it is up to you to decide when to <b>enter</b> and <b>exit</b> the market.
-  Traditionally, if you <b>sell</b> a share when the price is <b>higher</b> than when you first bought it, you would realize a <b>capital gain</b>(profit).
-  Looking at it from the other side, if you <b>sell</b>  a share when the price is <b>lower</b> than when you first bought it, you would realize a <b>capital loss</b>(defecit).
-  The possibility of capital gain is what makes investing in stocks so <b>attractive</b> to investors.
-  </p>
-</div>
-</div>
-
-</div>
-
-</section>
-
-<section id = 'terminology'>
-  <div class="container-fluid">
-    <div class="row">
-
-      <div class="col-lg-12">
-        <h3 class = 'underline'>Breaking Down Bonds </h3>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum dictum purus pellentesque accumsan. Duis ut augue a mauris tempus sagittis eget at nisi. Vestibulum bibendum ex eu leo accumsan sagittis. Sed quis lectus vel tellus dictum consectetur. Proin semper neque magna, eu faucibus nunc faucibus quis. Donec id elit ornare, posuere urna ac, hendrerit tellus. Quisque leo est, tristique eget tincidunt non, posuere ac libero. Fusce dignissim ligula erat. Vestibulum ac lectus id libero fermentum ullamcorper.
-
-Nunc dictum dictum lacus, commodo ultrices sapien sagittis nec. Nunc vel tellus non nunc mollis volutpat. Pellentesque aliquam sed risus vel vestibulum. Curabitur lacinia ullamcorper vehicula. Donec ut velit vitae sapien commodo facilisis a at odio. Etiam scelerisque odio ante, in consequat est vehicula eget. Aenean id aliquam nunc, vel ultricies sapien. Nulla odio turpis, interdum ac tortor et, sagittis venenatis risus. Quisque tristique tempus orci, non efficitur lorem luctus vitae. Sed vel convallis justo, vitae fermentum elit.
-
-Quisque a erat id ex gravida dignissim vitae nec nisi. Morbi pulvinar dictum dolor in mattis. Nullam interdum maximus ex non elementum. Vivamus accumsan tempus vehicula. Suspendisse non purus eu turpis convallis sagittis eu luctus urna. Morbi tincidunt lacus ut felis vestibulum egestas. Suspendisse eu tellus turpis.
-
-Quisque eu eleifend tellus. Nam egestas, est vel volutpat dictum, libero urna tristique libero, et lobortis nunc magna ac ligula. Nam pellentesque, turpis id tristique fermentum, quam ligula accumsan nulla, vel scelerisque risus felis vel eros. Aenean nec ex tempor, suscipit leo quis, gravida est. Suspendisse ut ligula at lectus pellentesque tincidunt sit amet id justo. Aliquam convallis odio ligula, suscipit cursus odio euismod ac. Suspendisse eleifend massa a mi pretium consequat. Vivamus cursus non velit quis vehicula. Aenean tempor urna libero, ut mattis erat varius ut. Nullam aliquet sapien nec tortor commodo, vitae pulvinar nisi viverra. Curabitur porta blandit tempor. Curabitur rhoncus, nunc eu tristique placerat, est odio tristique mauris, sed sagittis nisi arcu eget diam. Nullam dapibus scelerisque diam eget ornare. Ut pulvinar elementum quam, a fringilla lacus ullamcorper at. Phasellus scelerisque augue ut egestas cursus. Quisque porta ac enim at malesuada.
-</p>
-<p>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum vehicula suscipit. Mauris lobortis, sapien eu bibendum pharetra, mi urna fermentum quam, vitae consequat magna magna sed nisl. Nam id nisi at est rhoncus interdum sed eu ipsum. Phasellus vel augue ac nibh euismod volutpat eu quis nulla. Vestibulum mauris enim, facilisis quis convallis eu, interdum nec nunc. Donec quis ipsum augue. Cras vel lobortis arcu. Sed arcu ante, dictum sit amet sapien vitae, mattis mattis nulla. Nam euismod risus id feugiat scelerisque. Vivamus elementum, lectus commodo tincidunt dictum, tellus quam luctus ipsum, a fringilla leo est tincidunt diam. Suspendisse faucibus suscipit tincidunt.
-
-Nullam at ipsum scelerisque, malesuada odio sed, imperdiet nibh. Ut at est diam. Duis pulvinar porttitor enim, at efficitur mi mattis auctor. Etiam iaculis nisi nec ipsum volutpat, eget lacinia nibh tincidunt. Sed a libero lacus. Ut dapibus sapien dui. Nulla vel arcu tempor, luctus sapien sit amet, mollis velit.
-</p>
-
+        <div class="container arrow-positioning">
+          <a href="#bond-intro">
+            <div class="arrow bounce"></div>
+          </a>
+        </div>
       </div>
 
 
-
-
     </div>
 
 
 
-  </div>
+  </section>
 
-
-
-
-
-
-</section>
-<section id='bond-quotes'>
-  <div class="container-fluid quotes ">
-
-    <h3 class='SQ-Title underline'>Interpreting Bond Quotations</h3>
-    <div class="SQ-headings">
-      <h4><b>Microsoft</b></h4>
-      <h4>Friday, July 31st, 2020</h4>
-    </div>
-
-
-    <div class="table-responsive">
-
-      <table class="table">
-        <thead class = 'thead-dark'>
-          <tr>
-            <th a class="High-a chart-h" scope="col">Issuer</th>
-            <th class = 'Low-a chart-h'scope="col">Coupon</th>
-            <th class = 'Ticker chart-h'scope="col">Maturity Date</th>
-            <th class = 'Div chart-h'scope="col">Bid</th>
-            <th class = 'High-d chart-h'scope="col">Ask</th>
-            <th class = 'Low-d chart-h'scope="col">Yield</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Microsoft</td>
-            <td>11.5%</td>
-            <td>July 1, 2028</td>
-            <td>99.25</td>
-            <td>99.75</td>
-            <td>11.78%</td>
-
-
-          </tr>
-
-        </tbody>
-
-      </table>
-    </div>
-  </div>
-
-
-
-  <div class="SQ-explanations container-fluid ">
-    <div class='high-a inner'>
-      <h7><span>High</span>: The highest price the stock has reached in a single calendar year </h7>
-      <p><span>Example</span>: The highest price that Microsoft shares traded at in the past year is $216.38</p>
-    </div>
-    <div class='low-a inner'>
-      <h7><span>Low</span>: The lowest price the stock has reached in a single calendar year</h7>
-      <p><span>Example</span>: The lowest price that Microsoft shares traded at in the past year is $130.78</p>
-    </div>
-    <div class='ticker inner'>
-      <h7><span>Stock</span>: A unique abbreviation used to identify a company on a particular stock market AKA a ticker symbol </h7>
-      <p><span>Example</span>: Microsft&nbsp<i class="fas fa-arrow-right"></i>&nbspMSFT</p>
-    </div>
-    <div class='div inner'>
-      <h7><span>Div</span>: Dividends a company has given it's shareholders in a single calendar year on a per-share basis (Current stock price *(div%))</h7>
-      <p><span>Example</span>: $203.32 * 0.0101= $2.05. Microsoft has given out $2.05 in dividends per share in the past year. That amount is split over the number of times Microsoft declared dividends.
-      </p>
-    </div>
-    <div class='high-d inner'>
-      <h7><span>High</span>: The highest price reached in a trading day</h7>
-      <p><span>Example</span>: Microsft reached a high of $203.32 per share on July 31st </p>
-    </div>
-    <div class='low-d inner'>
-      <h7><span>Low</span>: The lowest price touched in a trading day</h7>
-      <p><span>Example</span>: Microsoft dipped to a low of $200.86 per share on July 31st</p>
-    </div>
-    <div class='Close inner'>
-      <h7><span>Close</span>: The last price the stock traded in the day of question</h7>
-      <p><span>Example</span>: When the NASDAQ closed at 4pm EST on July 31st, Microsoft finished the day trading at $201.30</p>
-    </div>
-  </div>
-</section>
-
-<section id = 'bond-interest'>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12">
-        <h3 class = 'underline'> Interest Rate and Inflation</h3>
-
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum dictum purus pellentesque accumsan. Duis ut augue a mauris tempus sagittis eget at nisi. Vestibulum bibendum ex eu leo accumsan sagittis. Sed quis lectus vel tellus dictum consectetur. Proin semper neque magna, eu faucibus nunc faucibus quis. Donec id elit ornare, posuere urna ac, hendrerit tellus. Quisque leo est, tristique eget tincidunt non, posuere ac libero. Fusce dignissim ligula erat. Vestibulum ac lectus id libero fermentum ullamcorper.
-
-Nunc dictum dictum lacus, commodo ultrices sapien sagittis nec. Nunc vel tellus non nunc mollis volutpat. Pellentesque aliquam sed risus vel vestibulum. Curabitur lacinia ullamcorper vehicula. Donec ut velit vitae sapien commodo facilisis a at odio. Etiam scelerisque odio ante, in consequat est vehicula eget. Aenean id aliquam nunc, vel ultricies sapien. Nulla odio turpis, interdum ac tortor et, sagittis venenatis risus. Quisque tristique tempus orci, non efficitur lorem luctus vitae. Sed vel convallis justo, vitae fermentum elit.
-
-Quisque a erat id ex gravida dignissim vitae nec nisi. Morbi pulvinar dictum dolor in mattis. Nullam interdum maximus ex non elementum. Vivamus accumsan tempus vehicula. Suspendisse non purus eu turpis convallis sagittis eu luctus urna. Morbi tincidunt lacus ut felis vestibulum egestas. Suspendisse eu tellus turpis.
-
-Quisque eu eleifend tellus. Nam egestas, est vel volutpat dictum, libero urna tristique libero, et lobortis nunc magna ac ligula. Nam pellentesque, turpis id tristique fermentum, quam ligula accumsan nulla, vel scelerisque risus felis vel eros. Aenean nec ex tempor, suscipit leo quis, gravida est. Suspendisse ut ligula at lectus pellentesque tincidunt sit amet id justo. Aliquam convallis odio ligula, suscipit cursus odio euismod ac. Suspendisse eleifend massa a mi pretium consequat. Vivamus cursus non velit quis vehicula. Aenean tempor urna libero, ut mattis erat varius ut. Nullam aliquet sapien nec tortor commodo, vitae pulvinar nisi viverra. Curabitur porta blandit tempor. Curabitur rhoncus, nunc eu tristique placerat, est odio tristique mauris, sed sagittis nisi arcu eget diam. Nullam dapibus scelerisque diam eget ornare. Ut pulvinar elementum quam, a fringilla lacus ullamcorper at. Phasellus scelerisque augue ut egestas cursus. Quisque porta ac enim at malesuada.
-</p>
-      </div>
-
-      </div>
+  <section id='Stock-1'>
+    <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12">
-          <h3 class = 'underline'> Example #1</h3>
+          <h3 class='underline'>Introduction to Bonds</h3>
 
           <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum dictum purus pellentesque accumsan. Duis ut augue a mauris tempus sagittis eget at nisi. Vestibulum bibendum ex eu leo accumsan sagittis. Sed quis lectus vel tellus dictum consectetur. Proin semper neque magna, eu faucibus nunc faucibus quis. Donec id elit ornare, posuere urna ac, hendrerit tellus. Quisque leo est, tristique eget tincidunt non, posuere ac libero. Fusce dignissim ligula erat. Vestibulum ac lectus id libero fermentum ullamcorper.
+            Bonds are referred to as a fixed income or debt security and are issued to the public in order to raise capital.
+            There are many different types of bonds that are on the market but corporate and government bonds are bought the most often.
+            A bond acts as a loan between the issuer and the buyer. An investor gives capital to the bond issuer in exchange for interest payments on that amount.
+            Interest is paid at set intervals throughout the entirety of the loan period; Semi-annual payments are most common.
+            Bonds nowadays are held in electronic systems and the interest payments are delivered directly into the accounts of the bondholders.
+            At the end of the loan term, the total amount is paid back to the buyer and the contract is terminated.
+            Governments issue bonds to aid with public programs and to fund regular day to day expenditures.
+            Some companies prefer issuing bonds over shares because capital can be raised without giving up an equity stake. Capital raised from a
+            company’s bond issue can be used for a wide variety of reasons such as paying off old debt, developing new projects and more.
+          </p>
 
-  Nunc dictum dictum lacus, commodo ultrices sapien sagittis nec. Nunc vel tellus non nunc mollis volutpat. Pellentesque aliquam sed risus vel vestibulum. Curabitur lacinia ullamcorper vehicula. Donec ut velit vitae sapien commodo facilisis a at odio. Etiam scelerisque odio ante, in consequat est vehicula eget. Aenean id aliquam nunc, vel ultricies sapien. Nulla odio turpis, interdum ac tortor et, sagittis venenatis risus. Quisque tristique tempus orci, non efficitur lorem luctus vitae. Sed vel convallis justo, vitae fermentum elit.
-
-  Quisque a erat id ex gravida dignissim vitae nec nisi. Morbi pulvinar dictum dolor in mattis. Nullam interdum maximus ex non elementum. Vivamus accumsan tempus vehicula. Suspendisse non purus eu turpis convallis sagittis eu luctus urna. Morbi tincidunt lacus ut felis vestibulum egestas. Suspendisse eu tellus turpis.
-
-  </p>
-
-        </div>
-        </div>
-        <div class="row">
-        <div class="col-lg-12">
-          <h3 class = 'underline'>Example #2</h3>
+          <h3 class='underline'>OTC Markets</h3>
 
           <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum dictum purus pellentesque accumsan. Duis ut augue a mauris tempus sagittis eget at nisi. Vestibulum bibendum ex eu leo accumsan sagittis. Sed quis lectus vel tellus dictum consectetur. Proin semper neque magna, eu faucibus nunc faucibus quis. Donec id elit ornare, posuere urna ac, hendrerit tellus. Quisque leo est, tristique eget tincidunt non, posuere ac libero. Fusce dignissim ligula erat. Vestibulum ac lectus id libero fermentum ullamcorper.
-
-  Nunc dictum dictum lacus, commodo ultrices sapien sagittis nec. Nunc vel tellus non nunc mollis volutpat. Pellentesque aliquam sed risus vel vestibulum. Curabitur lacinia ullamcorper vehicula. Donec ut velit vitae sapien commodo facilisis a at odio. Etiam scelerisque odio ante, in consequat est vehicula eget. Aenean id aliquam nunc, vel ultricies sapien. Nulla odio turpis, interdum ac tortor et, sagittis venenatis risus. Quisque tristique tempus orci, non efficitur lorem luctus vitae. Sed vel convallis justo, vitae fermentum elit.
-
-  Quisque a erat id ex gravida dignissim vitae nec nisi. Morbi pulvinar dictum dolor in mattis. Nullam interdum maximus ex non elementum. Vivamus accumsan tempus vehicula. Suspendisse non purus eu turpis convallis sagittis eu luctus urna. Morbi tincidunt lacus ut felis vestibulum egestas. Suspendisse eu tellus turpis.
-
-  </p>
-
+            Due to the complicated nature of bonds, they’re sold in Over-The-Counter(OTC) markets as opposed to exchanges.
+            Besides bonds, the majority of financial securities like stocks are listed on the OTC markets because they don’t
+            meet exchange requirements or don’t want to pay to be listed. Companies on the OTC markets aren’t exposed to a great number of
+            people which leads to a lower overall volume of trades occurring on this market as opposed to big exchanges.
+            As a result, a lot of the securities on the OTC markets aren’t liquid. Liquidity refers to the speed at which an investor is able to buy and
+            sell shares for and since there’s a relatively lower volume of trades occurring, investors can have a hard time liquidating their position.
+          </p>
+          <p>
+            Big banks and investment dealers act as market makers in the OTC market by posting bid and ask prices on networks that other dealers and brokers have access to.
+            Unlike exchanges where the price of a security is the same for everyone who wants to buy it or sell it, in the OTC market different dealers can quote different prices
+            for the same security. The banks and investment dealers will usually have an inventory of bonds/securities from which they add to and sell from to make their own profit,
+            this is called market making. Trades are conducted through online platforms, and by phone or email. Buyers and sellers are in direct contact with each other and the trade
+            is executed directly between the two parties. The trade doesn’t go through an exchange which means that information relating to the trade is not disclosed to the public.
+            A retail investor can access the bond market through online or phone channels the same way they would do for exchange traded securities. They may also contact a broker
+            and have them purchase bonds on their behalf from a registered investment dealer.
+          </p>
         </div>
       </div>
-    </div>
-
-  </div>
-</section>
-
-<section id='bond-gov-gic'>
-
-  <div class="container-fluid ">
-    <div class="row ">
-
-      <div class="col-lg-12">
-        <h3 class='underline'>GIC's</h3>
-        <p>“Buy low, sell high”, a very well known phrase which is essentially the underlying principle behind the traditional way of making money on the stock market. What ‘going long’ entails is investing in a company for the long run. When you
-          enter into a long position, you would buy shares of a company and have full ownership of those shares. From there, you would hope that the stock price increases, if or when it does, you would then sell those shares to another investor and
-          realize a capital gain. But say if the stock price goes down, your shares would now be worth a lot less than before. Investors would be willing to buy them for a reduced price which would ultimately result in a capital loss.
-        </p>
-        <p>Example: Arjun buys 20 shares of ABC at $2 a share. His account would reflect a defecit of $40 at that point. From there, ABC stock rises to 4$ a share and Arjun decides to sell his shares to another investor. From this sale he would
-          receive $80, leaving him with a gain of $40. Now let’s say the stock falls to $1. Arjun decides to cut his losses and sell his shares to another investor, from this transaction he would only receive $20, leaving him with a $20 deficit.
-        </p>
-
-      </div>
-
 
     </div>
+
+  </section>
+
+  <section id='Stock-2'>
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-12">
-        <h3 class='underline'>T-Bills</h3>
 
-        <p>Prices aren’t always going up though, inevitably there are going to be periods where a stock falls or is trending downwards, so what kind of trade could you place then, or do you just wait it out? Well, you can’t go long because when it
-          comes time to sell, you aren’t going to be left with a profit. This is where short-selling really comes in handy. When you short sell or short a stock, you are betting against it. You are hoping that the stock goes down so you can
-          capitalize on it. It seems weird right? I can make money when a stock goes down? Yes, when you short a stock, you borrow shares from someone called a broker. A broker is a person or company that has a large inventory of shares from most
-          companies. You promise to return those shares to the broker at a later date but in the meantime you sell them to another investor on the open market, creating a short position. All the proceeds from the short sale are deposited into your
-          account. If the stock price decreases, you will cover your short position by buying shares back at a lower price and returning them to your broker. However, the downside of short selling is that there’s unlimited risk involved. A stock
-          can
-          decide to soar after you short it and you have to buy it regardless of the price as you must return those shares to your broker at some point.</p>
-        <p>Example: Natalie short sells 10 shares of XYZ at $5. She would receive 50$ in her account but she still has to return 10 shares back to her broker. When the stock price goes down to $4, she decides to cover her position by buying 10
-          shares
-          of XYZ and returning them to her broker. It only cost her $40 to buy those shares so in her account, there’s a capital gain of $10. Let’s say instead of going down to $4, the price actually goes up to $6. Well, Natalie only had 50$ from
-          the
-          initial short sale, she now has to buy 10 shares of XYZ at $6 in order to return them to her broker. This transaction would leave her with a deficit of 10$. </p>
+      <div class="col-lg-12">
+        <h3 class='underline'>Breaking Down Bonds</h3>
+        <p>
+          <b>Face Value</b>&nbsp<i class="fas fa-arrow-right"></i>&nbsp The amount that the bond is first sold for. It is also the same amount that the bond issuer promises to pay back at the end of the loan period.
+        </p>
+
+        <p class=>
+          <b>Coupon Rate</b>&nbsp<i class="fas fa-arrow-right"></i>&nbsp Interest paid by the bond issuer relative to the bond's face value.
+        </p>
+
+        <p>
+          <b>Maturity Date</b>&nbsp<i class="fas fa-arrow-right"></i>&nbspThe end of the loan period. The bond matures at the maturity date and is the date at which the face value is returned to the bondholder.
+        </p>
+        <p>
+          <b>Term to Maturity</b>&nbsp<i class="fas fa-arrow-right"> </i>&nbspThe time that remains before a bond matures
+        </p>
+
+
+        <p>
+          <b>Bond Price</b>&nbsp<i class="fas fa-arrow-right"> </i>&nbspBonds are first sold in the primary market in certain denominations such as $1000, $10,000 and $100,000. When a bond is traded in the secondary market, its price is quoted
+          using an index with a base value of 100. If a bond trades below 100, it’s said to be trading at a discount. If it trades above 100, it’s trading at a premium.
+        </p>
+        <p><b>Example: </b>A Government of Canada bond has $1000 face value, it matures in 5 years and is quoted at 97 in the OTC market. It can be said that every $100 of the bond costs $97. A potential buyer will only have to pay $970 to buy the
+          $1000 bond, therefore, the bond is currently trading at a discount. At the maturity date, the bondholder will receive the face value of $1000. </p>
+        <h6 class="underline">Why Buy a Bond at a Premium ?</h6>
+
+        <p>
+          If the coupon on the bond is big enough to cover the capital loss and leave a sufficient enough return thereafter, it may be worthwhile to buy a bond at a premium.
+          For example, bond A has a 5% coupon, bond B has a 12%, both bonds have a face value of $1000 and both mature in two years. However, bond A trades at face value while bond B trades at $1050. Total payments from bond A equal $100 and total
+          payments from bond B equal $200. In the end, the payments from bond B would cover the capital loss and leave the bond holder with $150 profit.
+        </p>
+
+
       </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+</section>
+  <section id='Stock-1'>
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-lg-12">
+          <h3 class='underline'>Return on a Bond</h3>
+          <p>Income from a bond is generally made up of two main sources: Interest Income and Capital Gains. Different investors use these sources of income in order to determine the return of a bond. All investors don't employ the same style of
+            investing and this leads to different measurments of the return on a bond. </p>
+
+          <h6 class="underline">1) Current Yield</h6>
+          <p>The current yield measures the return on a bond relative to its purchase price. The face value of the bond is irrelevant when calculating this type of return since investors interested in it are not looking to hold the bond until
+            maturity but rather make a relatively quick profit via coupon payments or capital gains </p>
+          <p class="formula"><b>Current Yield</b> = Annual Income / Current Market Price <b>OR</b> Coupon Payment / Bond Purchase Price </p>
+
+          <h6 class="underline">2) Yield to Maturity</h6>
+          <p>Refers to the return on the bond if the following conditions are met:</p>
+          <div class="rules-ytm">
+            <p> <b>1.</b> Held to maturity </p>
+            <p> <b>2.</b> Coupon payments are reinvested at a rate equivalent to the coupon rate</p>
+
+          </div>
+
+          <p> <b>NOTE:</b> Smart investors don’t “cash out” whenever they make a profit, but instead are trying to find ways to make money from their money. If an investor gets a coupon payment, they generally put it into some sort of investment
+            vehicle that gives them the same rate of return as the coupon. </p>
+
+          <p>The YTM is by far the most accurate depiction of the return on a bond and is very useful when comparing different bonds. Long term investors will often look at the YTM along with other characteristics of the bond to determine if it’s a
+            good investment. Unlike the current yield, the YTM accounts for the reinvestment of coupon payments but also for any capital gains or losses that arise at maturity. It’s unlikely for bonds to trade at par value and almost always trade
+            above or below that level. The YTM is generally one of three rates; If the bond is trading at face value, the YTM will equal the coupon rate, if it’s trading at a discount, it will be high than the coupon rate and if it’s trading at a
+            premium, it will be lower than the coupon rate. </p>
+
+          <h6 class="underline">Why YTM Makes Sense ?</h6>
+
+          <p>Well say Timmy bought a bond for $1020, that has a $1000 face value, a 5% coupon and a maturity date in 2 years. Because he bought the bond at a premium, he will only receive $1000 at maturity and incur a capital loss of $20. This loss
+            reduces his overall return because it reduces the overall return of his coupons. Over the life of the bond, he would receive coupon payments totalling $100 but because of his capital loss, he would end up with only $80.
+          </p>
+
+
+        </div>
+
+
+      </div>
+
+
 
     </div>
 
 
-  </div>
-</section>
+
+
+
+
+  </section>
+  <section id='bond-quotes'>
+    <div class="container-fluid quotes ">
+
+      <h3 class='SQ-Title underline'>Scenario #1: Yield/YTM Calculations </h3>
+      <div class="">
+        <p>Calculate and compare the Yield/YTM for the bonds below by using this calculator </p>
+
+      </div>
+
+
+      <div class="table-responsive">
+
+        <table class="table table-dark table-striped">
+          <thead class='thead-dark'>
+            <tr>
+              <th a class="High-a chart-h" scope="col">#</th>
+              <th class='Low-a chart-h' scope="col">Current Price</th>
+              <th class='Ticker chart-h' scope="col">Face Value</th>
+              <th class='Div chart-h' scope="col">Years to Maturity</th>
+              <th class='High-d chart-h' scope="col">Coupon Rate</th>
+              <th class='Low-d chart-h' scope="col">Coupon Frequency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> <b>BOND A</b> </td>
+              <td>$980</td>
+              <td>$1000</td>
+              <td>5</td>
+              <td>5%</td>
+              <td>Semi-Anually</td>
+            </tr>
+            <tr>
+              <td> <b>BOND B</b> </td>
+              <td>$1000</td>
+              <td>$1000</td>
+              <td>5</td>
+              <td>5%</td>
+              <td>Semi-Anually</td>
+            </tr>
+            <tr>
+              <td> <b>BOND C</b> </td>
+              <td>$1020</td>
+              <td>$1000</td>
+              <td>5</td>
+              <td>5%</td>
+              <td>Semi-Anually</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+
+
+
+
+  </section>
+
+  <section id='Stock-1'>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class='underline'>Who Chooses the Coupon Rate ? </h3>
+
+          <p>
+            Most investors buy bonds in order to receive the coupon payments that come as a result of owning it. When a bond is first issued, its coupon rate is usually derived from the market interest rate. The market interest rate is simply the
+            rate at which different financial institutions like banks offer on cash deposits or other consumer loan products. Examples of some of the coupon rates for government of Canada bonds can be found here. Notice that the rates aren’t very
+            high, on average they’re near 0.5% to 2% because different bonds have different terms to maturity. There are 3 categories of bonds: short term, medium term and long term. Short term bonds are bonds that mature in 3 years or less, medium
+            term bonds mature in 3-10 years and long term bonds mature in 10+ years. The reason why the coupon rates rise as the term to maturity increases is because it’s a way to incentivise investors to lock up their money for 5, 10 or however
+            many years.
+          </p>
+
+          <h3 class='underline'>Bond Ratings</h3>
+
+          <p>
+            Back when bonds were created, every walk of life bought them from big companies to workers in blue collar jobs. Researching a company and trying to determine if they’re creditworthy is a fairly challenging task because it requires a lot
+            of due diligence and background knowledge. Standard and Poor’s bond rating system was created in order to inform investors of the risk of company’s bond issue and the likelihood that a company would be able to repay their debts. Have a
+            look at the rating system here. Essentially, higher ratings translate to higher chances that a company will be able to repay their debt (bond’s face value). Government bonds are always rated a AAA because they pretty much guarantee that
+            the principle is paid back. As for the other end of the scale; Lower ratings translate to uncertainty or probable inability of a company to repay its debt. Each bond issue must be rated and the S&P’s main job is to do deep dive into a
+            company’s financial statements and find important reports and signals that they compare to their standards to indicate whether the issue is risky or not. Companies usually pay credit rating agencies a fixed fee in order to rate their
+            bonds because it has become the standard and without a rating, a bond issue is unlikely to sell.
+          </p>
+
+
+          <h3 class='underline'>Callable Bonds</h3>
+
+          <p>
+            If interest rates happen to go up after Company A issues bonds, it doesn’t affect them in any way since they’ll continue to pay the same fixed coupon rate that was initially agreed upon. However, if interest rates fall, every other issuer
+            will start to issue bonds with lower coupons just because they can. Company A is stuck paying an unnecessarily high coupon rate so they call or redeem their bonds. They’re able to do this because there is a clause in most bond contracts
+            that allow them to do so. Usually, a company will outline what year they have the option to call the bond and when this time comes they declare what’s known as call price which is slightly above the face value of the bond and is what they
+            pay the bondholders in exchange to end the agreement between them. For example, interest rates fall and company A declares a call price of $110 for their $100 bonds. Anyone who currently has their bonds can redeem them and get a little
+            bit extra on top of what they initially bought the bond for. Companies do this to make up for any inconvenience they might have caused by calling the bond prior to maturity. After they do this, company A might decide to issue new bonds at
+            a lower coupon rate that matches the current prevailing market interest rate in order to raise the same amount of capital at a lower cost.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+  </section>
+  <section id='Stock-2'>
+
+    <div class="container-fluid ">
+      <div class="row ">
+
+        <div class="col-lg-12">
+            <h3 class='underline'>Types of Risks</h3>
+            <div>
+
+
+              <h6 class="underline">Default Risk</h6>
+              <p>
+                In most cases, when a bond is bought, the issuer is obligated to regularly give out interest payments to the holder as well as repay the loan amount at maturity. If they fail to do so, the bond holders can file a claim on the
+                company’s assets. Usually, if a company is not able to pay their bondholders, they’re in a rough enough financial position where they must file for bankruptcy. What this means is that they’re required to sell off all their assets and
+                pay back as much of their debt as possible. Bondholders have the strongest claim on assets because they’re essentially creditors while shareholders are at the bottom of the list because they’re technically owners of the company. If
+                this occurs, bondholders may recoup most, if not all of their initial investment but there’s no guarantee. It’s very important to know the financial well being of a company before buying any of their bonds to avoid default risk.
+              </p>
+
+
+
+
+              <h6 class='underline'>Interest Rate Risk</h6>
+
+              <p>
+                Interest rates and the price of bonds are inversely related. When market interest rates increase, the price of bonds decrease and vice versa. For example, company A decides to issue bonds with a face value of $100 and a 5% coupon at a
+                time when market interest rates are 5%. The market rate increases to 6% and now company B issues bonds with the same face value but offers a 6% coupon. No one is going to want to buy bonds offered by company A because they would
+                rather buy bonds from company B. Company A’s bonds automatically become less valuable to investors and as a result must be sold at a discount to draw in buyers. The price of bond A must be lowered in order to make the YTM reflect the
+                current market interest rates. Initially, the YTM of company A’s bonds are 5% but since market rates go up, the bond is sold at a price of $95.73. This price enables the investors to receive a return of 6% that’s partly made up of
+                interest income and some capital gain.
+              </p>
+
+
+
+              <h6 class='underline'>Inflationary Risk</h6>
+
+
+              <p>
+                Inflation is the concept that a dollar today will be worth less than a dollar in the future. It’s the measure that tracks the steady rise in prices of goods and services over time. For example, the price of a chocolate bar today is
+                much higher than the price 20 years ago. There are two main forms of inflation, cost push inflation and demand pull inflation. Cost push inflation is inflation that arises from an increase in the cost to produce a good/service. When
+                production costs increase, a company can choose to push it onto its consumers by charging a higher price for the same good/service. For example, if a company uses lumber to make their products and the price of lumber suddenly
+                increases due to a shortage, they’ll just increase the price of the product instead of bearing the cost of it themselves. Demand-Pull inflation occurs when the price of a good/service increases because demand outweighs supply. As
+                demand increases and supply stays the same, businesses know that the people who really want the product are willing to pay more for it because there’s only a limited quantity available. They effectively raise the price to hopefully
+                deter enough buyers to the point where they’re able to fully supply those that are able to pay the higher amount.
+              </p>
+
+            <p>
+              The risk of inflation should be looked at prior to buying any long term bonds. A long term bond is a bond with a maturity date in 10+ years. When investors believe that inflation is on the rise, they look for bonds with higher interest
+              rates to offset any loss in buying power from the coupons. For example, Dan buys a 10 year bond with a $100 face value and has a coupon of 5%. Inflation is expected to rise and because of this the $5 coupon payment will slowly start to
+              be worth less and less as years pass. Say Dan uses his first coupon payment to buy a pack of pencils that cost $4. Over the years the cost of a pack of pencils, along with other goods and services start to increase and since Dan’s
+              coupon payments are fixed, they slowly start to become incapable of covering the cost of his desired goods. After 10 years, he goes back to the store with his last coupon and the pack of pencils now costs $7 because of inflation. This
+              is why most bond investors seek a bond with an additional return of 2% return on top of their desired coupon rate to account for inflation. If Dan knew that inflation was going to increase in the long term, he would look for a bond with
+              a coupon rate of 7% in order to always be able to afford the pack of pencils every year for 10 years.
+            </p>
+
+          <p> <b>NOTE:</b> Inflation will never be as extreme as the example presented above. Inflation is closely monitored by the Bank of Canada and it is their job to keep inflation low. They do this by employing different strategies like
+            influencing interest rates, setting monetary policy and more. Read more about how inflation is measured and kept under control here. </p>
+
+          </div>
+
+      </div>
+    </div>
+
+  </section>
+  <section id='Stock-1'>
+
+    <div class="container-fluid ">
+      <div class="row ">
+
+        <div class="col-lg-12">
+          <h3 class='underline'>Bonds in the 21st Century</h3>
+
+          <p>
+            The demographic of investors who buy bonds are those that are looking for risk-averse investments. By nature, bonds aren’t the easiest securities to understand and the purchasing process can often be very confusing. Furthermore, bond
+            returns are heavily reliant on macroeconomic factors and these factors can be very difficult for novice or even well experienced investors to wrap their heads around. Nowadays, investing in bonds is primarily done through some sort of
+            fund that incorporates bonds into their portfolio or is a portfolio entirely made up of bonds. Bond funds can employ different strategies like only buying bonds with a certain rating or perhaps buying bonds with different ratings.
+            Regardless, this takes the ease of the investor since they aren’t required to keep track of the individual bonds and their investment is being handled by a professional. Investment funds are discussed on this page, however, the general
+            premise is that these funds will invest in bonds, receive the coupon payments, distribute them accordingly amongst the investors and take their cut. The days of buying individual bonds are over, investing in successful bond funds can
+            provide an investor with safety of their initial investment as well as a cash flowing security.
+          </p>
+
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <section id='Stock-2'>
+
+    <div class="container-fluid ">
+      <div class="row ">
+
+        <div class="col-lg-12">
+          <h3 class='underline'>GIC</h3>
+          <p>
+            A Guaranteed Investment Certificate is a type of fixed income investment that provide holders with a fixed rate of interest in exchange for a sum of capital. The majority of GIC’s are offered by banks and are considered low risk
+            investments since any capital invested is guaranteed to be returned. GICs offer relatively lower interest rates than some other securities but aren’t too far off from some of the coupon rates offered by short-medium term bonds. Compare
+            and contrast some of the GIC rates here. GIC’s work the same way as bonds; Money is given to the issuer up front, interest is paid based off the principle and then the total loan amount is returned. The main difference between the two
+            securities is that GIC’s cannot be sold for capital gain. Whether an individual chooses to invest in a bond or a GIC is completely dependent on their view of where interest rates are going and seeing if there’s a possibility for capital
+            gain in the future.
+          </p>
+          <p>
+            There are two main types of GICs: cashable and non-cashable. Cashable GICs permit the holder to liquidate the GIC earlier than the maturity date. Non-cashable GICs generally don’t allow early withdrawal, but depending on the issuer, a fee
+            can be paid to do so. Cashable GICs offer lower interest rates than non-cashable GICs because they’re more liquid. Liquidity refers to the speed at which a security is able to be turned into cash and cashable-GIC holders have this option
+            at any time. GIC’s are typically meant to save funds in the short term without much risk. Individuals who are risk averse, need capital in the near future or just require some form of liquid investments are all ideal buyers of GIC’s.
+          </p>
+
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+  </section>
 
 
 
@@ -353,17 +476,15 @@ Quisque eu eleifend tellus. Nam egestas, est vel volutpat dictum, libero urna tr
 
 
 
-<footer class = 'bond-footer'>
-<p>Copyright <i class="far fa-copyright"></i> 2020 Bullish-Wizard. All rights reserved. </p>
+  <footer class='bond-footer'>
+    <p>Copyright <i class="far fa-copyright"></i> 2020 Bullish-Wizard. All rights reserved. </p>
 
 
 
 
 
 
-</footer>
-
-
+  </footer>
 
 
 
@@ -374,13 +495,10 @@ Quisque eu eleifend tellus. Nam egestas, est vel volutpat dictum, libero urna tr
 
 
 
+  <!-- Jquery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Javascript stylesheet -->
+  <script src="index.js" charset="utf-8"></script>
+</body>
 
-
-
-
-        <!-- Jquery CDN -->
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <!-- Javascript stylesheet -->
-          <script src="index.js" charset="utf-8"></script>
-  </body>
 </html>
