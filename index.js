@@ -1,12 +1,12 @@
-$(window).scroll(function(e) {
-
-    var distanceScrolled = $(this).scrollTop();
-
-    $('.stock-header-header').css('-webkit-filter', 'blur('+distanceScrolled/60+'px)');
-    $('.bond-header-header').css('-webkit-filter', 'blur('+distanceScrolled/60+'px)');
-
-
-});
+// $(window).scroll(function(e) {
+//
+//     var distanceScrolled = $(this).scrollTop();
+//
+//     $('.stock-header-header').css('-webkit-filter', 'blur('+distanceScrolled/60+'px)');
+//     $('.bond-header-header').css('-webkit-filter', 'blur('+distanceScrolled/60+'px)');
+//
+//
+// });
 
 
 
