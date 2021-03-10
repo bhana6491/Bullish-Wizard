@@ -290,7 +290,12 @@ left:29%;
   }
   .cta-column{
     padding-top: 0;
-    margin-top: 4%;
+    margin-top: 1%;
+    line-height: 1.2
+  }
+
+  .arrow{
+    visibility: hidden;
   }
 
 
@@ -327,7 +332,7 @@ left:29%;
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px){
 
 
 /* TITLE PAGE */
@@ -335,12 +340,14 @@ left:29%;
   left: 16%;
   max-width: 70%;
 }
+
 .start-button{
   left: 0px;
 }
 .cta-column{
   padding-top: 0;
-  margin-top: -5%;
+  margin-top: -3%;
+  line-height: 1.4;
 }
 .arrow{
   visibility: hidden;
@@ -381,6 +388,7 @@ left:26%;
  .cta-column{
    padding-top: 0;
    margin-top: -2%;
+   line-height: 1.3;
  }
  .stock-body-intro, .bond-body-intro, .fund-body-intro{
  top: 4rem;
@@ -455,8 +463,6 @@ left:26%;
 
   }
   #Stock-1,#Stock-2, #mutual-funds,#index-funds,#etf,#income-trusts{
-    padding-right: 20%;
-    padding-left: 20%;
   }
 
   .main-image-container{
