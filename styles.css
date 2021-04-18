@@ -41,12 +41,12 @@ p{
   text-decoration: none;
   font-size: 1.2rem;
 }
-a{
+/* a{
   text-decoration:none !important;
-}
-a:hover{
+} */
+/* a:hover{
   color:black;
-}
+} */
 .underline-intro{
   display: inline-block;
   text-decoration: underline;
@@ -626,6 +626,7 @@ font-family: 'Assistant', sans-serif;
 .s-b-f-links{
   position:relative;
   color:black;
+  text-decoration: none!important;
   font-weight: 300;
   /* background:rgba(255,255,255, 0.9); */
   background-color: white;
@@ -792,6 +793,29 @@ background-color: #449DD1;
   position:absolute;
   right: 1%;
 }
+.taxes{
+  line-height: 1;
+}
+
+
+a.links{
+  color:blue;
+}
+
+a.links:hover{
+  text-decoration: underline;
+}
+.SQ-explanations{
+  margin-top:10px;
+  line-height: 1.5;
+
+}
+
+p.coolguy{
+  float:right;
+  display: inline;
+}
+
 
 /*********************** FOOTER START**********************************/
 
