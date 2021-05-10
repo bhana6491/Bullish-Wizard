@@ -142,6 +142,7 @@ opacity: 0.6;
 
 .start-button:hover {
 text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+text-decoration: none;
 -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
 -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
 transition: all 0.4s ease 0s;
@@ -154,6 +155,7 @@ color:#1089ff;
 }
 .magnifying-glass{
   font-size: 2rem;
+  underline: none;
 }
 
 
@@ -300,8 +302,8 @@ left:29%;
 
 
   .stock-body-intro, .bond-body-intro, .fund-body-intro{
-  top:8rem;
-  width:45%;
+  top:5rem;
+  width:50%;
   left:29%;
 
   }
@@ -355,7 +357,7 @@ left:29%;
 .stock-body-intro, .bond-body-intro, .fund-body-intro{
 top: 4rem;
 width:50%;
-left:26%;
+left:20%;
 
 }
 .stock-header-header, .bond-header-header, .fund-header-header{
@@ -392,7 +394,7 @@ left:26%;
  }
  .stock-body-intro, .bond-body-intro, .fund-body-intro{
  top: 4rem;
- width:50%;
+ width:70%;
  }
 
  .start-button{
@@ -439,6 +441,10 @@ left:26%;
     padding-bottom:7%;
 
   }
+  .stock-body-intro, .bond-body-intro, .fund-body-intro{
+  top: 8rem;
+  width:70%;
+  }
   }
 
 /*
@@ -461,6 +467,10 @@ left:26%;
   #stock-quotes, #bond-quotes{
     padding-bottom:7%;
 
+  }
+  .stock-body-intro, .bond-body-intro, .fund-body-intro{
+  top: 20rem;
+  width:70%;
   }
   #Section-1,#Section-2, #mutual-funds,#index-funds,#etf,#income-trusts{
   }
@@ -882,7 +892,7 @@ padding-bottom: 0;
   margin-left: auto;
 
   margin-right: auto;
-  width:30%;
+  width:50%;
 }
 .image-margin{
   margin-bottom: 0;
